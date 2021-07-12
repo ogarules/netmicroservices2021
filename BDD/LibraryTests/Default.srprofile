@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestProfile xmlns="http://www.specflow.org/schemas/plus/TestProfile/1.5">
+    <Settings projectName="LibraryTests"/>
+    <Execution retryFor="None" stopAfterFailures="0"/>
+    <Environment testThreadIsolation="SharedAppDomain"/>
+</TestProfile>

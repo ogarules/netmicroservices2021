@@ -1,0 +1,145 @@
+﻿2021-07-10T22:51:57.6728714-05:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2021-07-10T22:51:57.6730778-05:00;VSTestExecutionThread;Info;SpecFlow+Runner 3.9.7 in Framework net50 in x64 mode execution started
+2021-07-10T22:51:57.6730861-05:00;VSTestExecutionThread;Info;TestAdapter Location: C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2021-07-10T22:51:57.6757442-05:00;VSTestExecutionThread;Info;Current UserName: 'OGARCIA', MachineName: 'DESKTOP-R6884FH'
+2021-07-10T22:51:57.8351487-05:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LibraryTests.dll
+2021-07-10T22:51:57.8356141-05:00;VSTestExecutionThread;Info;Output folder configured to "C:\Repositorios\Cursomicro2021NET\BDD\TestsResults" (default)
+2021-07-10T22:51:57.8357143-05:00;VSTestExecutionThread;Info;Profile: LibraryTests
+2021-07-10T22:51:57.8916386-05:00;VSTestExecutionThread;Info;Log file path: C:\Repositorios\Cursomicro2021NET\BDD\TestsResults\LibraryTests_LibraryTests_2021-07-10T225157.log
+2021-07-10T22:51:57.8970220-05:00;Thread#15;Info;Checking activation
+2021-07-10T22:51:57.9866399-05:00;Thread#15;Info;Activated.
+2021-07-10T22:51:57.9869236-05:00;Thread#15;Info;Activation check completed
+2021-07-10T22:51:57.9870220-05:00;Thread#15;Info;Starting test run
+2021-07-10T22:51:58.0456796-05:00;Thread#15;Info;Discovering target: Default
+2021-07-10T22:51:58.0459256-05:00;Thread#15;Info;Discovering tests from assembly: C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LibraryTests.dll
+2021-07-10T22:51:58.0989822-05:00;Thread#15;Info;Discovered tests from assembly: C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LibraryTests.dll
+2021-07-10T22:51:58.0997826-05:00:Test Suite Dump
+2021-07-10T22:51:58.1007146-05:00:#0: LibraryTests/LibraryTests - 
+2021-07-10T22:51:58.1007408-05:00:#1: Default - 
+2021-07-10T22:51:58.1007453-05:00:#2: LibraryTests - 
+2021-07-10T22:51:58.1007467-05:00:#3: CalculatorOperations - 
+2021-07-10T22:51:58.1033727-05:00:#4: Add two numbers - TestAssembly:LibraryTests/Feature:CalculatorOperations/Scenario:Add+two+numbers
+2021-07-10T22:51:58.1034508-05:00:#5: Multiply two numbers - TestAssembly:LibraryTests/Feature:CalculatorOperations/Scenario:Multiply+two+numbers
+2021-07-10T22:51:58.1035033-05:00:End: Test Suite Dump
+2021-07-10T22:51:58.1151659-05:00:Thread#0:Scheduler: get next test for thread 0
+2021-07-10T22:51:58.1163032-05:00:Thread#:Scheduler: testitem #4 from normal test queue 
+2021-07-10T22:51:58.1163580-05:00:Thread#0:Scheduler: considering testitem #4 for thread 0
+2021-07-10T22:51:58.1182789-05:00:Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+2021-07-10T22:51:58.1182942-05:00:Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+2021-07-10T22:51:58.1182963-05:00:Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+2021-07-10T22:51:58.1182988-05:00:Thread#0:Scheduler: using testitem #4 for thread 0
+2021-07-10T22:51:58.1187458-05:00:Thread#0:Scheduler: Test #4 is scheduled for thread
+2021-07-10T22:51:58.1194546-05:00:Thread#0:Scheduler: with testItemExecutionIndex 0
+2021-07-10T22:51:58.1208169-05:00:Thread #0: creating new test thread executor for LibraryTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+2021-07-10T22:51:58.1219472-05:00:Thread #0: Creating test assembly executor for execution model SharedAppDomain
+2021-07-10T22:51:58.1220679-05:00:Thread #0: Creating test assembly executor for execution model SharedAppDomain
+2021-07-10T22:51:58.1225075-05:00:Thread #0: using TechTalk.SpecRun.Framework.Execution.SharedAppDomain.SharedAppDomainTestAssemblyExecutorHost to execute tests
+2021-07-10T22:51:58.1375670-05:00:Assembly resolving TechTalk.SpecRun.Framework.Executor, Culture=neutral, PublicKeyToken=null
+2021-07-10T22:51:58.1390239-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' from .deps.json file
+2021-07-10T22:51:58.1390357-05:00:[AssemblyCache] Could not resolve 'TechTalk.SpecRun.Framework.Executor' from .deps.json
+2021-07-10T22:51:58.1397838-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0'
+2021-07-10T22:51:58.1400051-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\TechTalk.SpecRun.Framework.Executor.dll'
+2021-07-10T22:51:58.1400799-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\TechTalk.SpecRun.Framework.Executor.exe'
+2021-07-10T22:51:58.1401215-05:00:[AssemblyCache] Could not resolve 'TechTalk.SpecRun.Framework.Executor' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0'
+2021-07-10T22:51:58.1403005-05:00:TargetFramework: .NETCoreApp,Version=v5.0
+2021-07-10T22:51:58.1404806-05:00:Tfm: netcoreapp5.0
+2021-07-10T22:51:58.1404919-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0'
+2021-07-10T22:51:58.1404943-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0\TechTalk.SpecRun.Framework.Executor.dll'
+2021-07-10T22:51:58.1405540-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0\TechTalk.SpecRun.Framework.Executor.exe'
+2021-07-10T22:51:58.1405866-05:00:[AssemblyCache] Could not resolve 'TechTalk.SpecRun.Framework.Executor' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0'
+2021-07-10T22:51:58.1468020-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' in folder 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6'
+2021-07-10T22:51:58.1468204-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' to 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6\TechTalk.SpecRun.Framework.Executor.dll'
+2021-07-10T22:51:58.1468610-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' to 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6\TechTalk.SpecRun.Framework.Executor.exe'
+2021-07-10T22:51:58.1468851-05:00:[AssemblyCache] Could not resolve 'TechTalk.SpecRun.Framework.Executor' in folder 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6'
+2021-07-10T22:51:58.1469733-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' in folder 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6'
+2021-07-10T22:51:58.1469794-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' to 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6\TechTalk.SpecRun.Framework.Executor.dll'
+2021-07-10T22:51:58.1470082-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' to 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6\TechTalk.SpecRun.Framework.Executor.exe'
+2021-07-10T22:51:58.1470311-05:00:[AssemblyCache] Could not resolve 'TechTalk.SpecRun.Framework.Executor' in folder 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6'
+2021-07-10T22:51:58.1471013-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' in folder 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6'
+2021-07-10T22:51:58.1471066-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' to 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6\TechTalk.SpecRun.Framework.Executor.dll'
+2021-07-10T22:51:58.1471406-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' to 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6\TechTalk.SpecRun.Framework.Executor.exe'
+2021-07-10T22:51:58.1471661-05:00:[AssemblyCache] Could not resolve 'TechTalk.SpecRun.Framework.Executor' in folder 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6'
+2021-07-10T22:51:58.1473230-05:00:Assembly resolving TechTalk.SpecRun.Framework.Executor, Culture=neutral, PublicKeyToken=null
+2021-07-10T22:51:58.1473314-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' from .deps.json file
+2021-07-10T22:51:58.1473335-05:00:[AssemblyCache] Could not resolve 'TechTalk.SpecRun.Framework.Executor' from .deps.json
+2021-07-10T22:51:58.1473374-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0'
+2021-07-10T22:51:58.1473386-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\TechTalk.SpecRun.Framework.Executor.dll'
+2021-07-10T22:51:58.1473744-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\TechTalk.SpecRun.Framework.Executor.exe'
+2021-07-10T22:51:58.1473971-05:00:[AssemblyCache] Could not resolve 'TechTalk.SpecRun.Framework.Executor' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0'
+2021-07-10T22:51:58.1474007-05:00:TargetFramework: .NETCoreApp,Version=v5.0
+2021-07-10T22:51:58.1474103-05:00:Tfm: netcoreapp5.0
+2021-07-10T22:51:58.1474127-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0'
+2021-07-10T22:51:58.1474137-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0\TechTalk.SpecRun.Framework.Executor.dll'
+2021-07-10T22:51:58.1474486-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0\TechTalk.SpecRun.Framework.Executor.exe'
+2021-07-10T22:51:58.1474749-05:00:[AssemblyCache] Could not resolve 'TechTalk.SpecRun.Framework.Executor' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0'
+2021-07-10T22:51:58.1477933-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' in folder 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6'
+2021-07-10T22:51:58.1478006-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' to 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6\TechTalk.SpecRun.Framework.Executor.dll'
+2021-07-10T22:51:58.1478278-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' to 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6\TechTalk.SpecRun.Framework.Executor.exe'
+2021-07-10T22:51:58.1478509-05:00:[AssemblyCache] Could not resolve 'TechTalk.SpecRun.Framework.Executor' in folder 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6'
+2021-07-10T22:51:58.1479244-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' in folder 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6'
+2021-07-10T22:51:58.1479300-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' to 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6\TechTalk.SpecRun.Framework.Executor.dll'
+2021-07-10T22:51:58.1479541-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' to 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6\TechTalk.SpecRun.Framework.Executor.exe'
+2021-07-10T22:51:58.1479746-05:00:[AssemblyCache] Could not resolve 'TechTalk.SpecRun.Framework.Executor' in folder 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6'
+2021-07-10T22:51:58.1480455-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' in folder 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6'
+2021-07-10T22:51:58.1480508-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' to 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6\TechTalk.SpecRun.Framework.Executor.dll'
+2021-07-10T22:51:58.1480745-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecRun.Framework.Executor' to 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6\TechTalk.SpecRun.Framework.Executor.exe'
+2021-07-10T22:51:58.1480951-05:00:[AssemblyCache] Could not resolve 'TechTalk.SpecRun.Framework.Executor' in folder 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6'
+2021-07-10T22:51:58.2118563-05:00:Thread#0:T:-> Loading plugin C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LivingDoc.SpecFlowPlugin.dll
+2021-07-10T22:51:58.2273781-05:00:Thread#0:T:-> Loading plugin C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecRun.Runtime.SpecFlowPlugin.dll
+2021-07-10T22:51:58.2306026-05:00:Thread#0:T:-> Loading plugin C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LibraryTests.dll
+2021-07-10T22:51:58.2524362-05:00:Thread#0:T:-> Missing [assembly:RuntimePlugin] attribute in LibraryTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null. Please check https://go.specflow.org/doc-plugins for details.
+2021-07-10T22:51:58.2554304-05:00:Thread#0:T:-> Using specflow.json
+2021-07-10T22:51:58.3003239-05:00:Thread#0: Test #4/0 is started on thread #0
+2021-07-10T22:51:58.3261870-05:00:Thread#0:B:Given a first number 1
+2021-07-10T22:51:58.3409670-05:00:Thread#0:T:done: CalculatorSteps.GivenAFirstNumber(1) (0.0s)
+2021-07-10T22:51:58.3419949-05:00:Thread#0:B:And a second number 2
+2021-07-10T22:51:58.3441699-05:00:Thread#0:T:done: CalculatorSteps.GivenASecondNumber(2) (0.0s)
+2021-07-10T22:51:58.3443474-05:00:Thread#0:B:When two numbers are added
+2021-07-10T22:51:58.3466995-05:00:Thread#0:T:done: CalculatorSteps.WhenTwoNumberOperation("added") (0.0s)
+2021-07-10T22:51:58.3468514-05:00:Thread#0:B:Then the result must be 3
+2021-07-10T22:51:58.3508429-05:00:Thread#0:T:done: CalculatorSteps.TheResultMustBe(3) (0.0s)
+2021-07-10T22:51:58.3552499-05:00:Thread#0:Scheduler: get next test for thread 0
+2021-07-10T22:51:58.3552692-05:00:Thread#:Scheduler: testitem #5 from normal test queue 
+2021-07-10T22:51:58.3552715-05:00:Thread#0:Scheduler: considering testitem #5 for thread 0
+2021-07-10T22:51:58.3552960-05:00:Thread#0:TestItem#5:testItemMatchesCurrentTestThread:UnSpecific
+2021-07-10T22:51:58.3552983-05:00:Thread#0:TestItem#5:runsOnOneOtherThreadSpecific:False
+2021-07-10T22:51:58.3552994-05:00:Thread#0:TestItem#5:runsOnOneOtherThreadUnspecific:False
+2021-07-10T22:51:58.3553006-05:00:Thread#0:Scheduler: using testitem #5 for thread 0
+2021-07-10T22:51:58.3553082-05:00:Thread#0:Scheduler: Test #5 is scheduled for thread
+2021-07-10T22:51:58.3553141-05:00:Thread#0:Scheduler: with testItemExecutionIndex 0
+2021-07-10T22:51:58.3590275-05:00:Thread#0: Test #4/0 is finished on thread #0 as Succeeded within 0.0581919 seconds
+2021-07-10T22:51:58.3601384-05:00:Thread#0: Test #5/0 is started on thread #0
+2021-07-10T22:51:58.3610088-05:00:Thread#0:B:Given a first number 1
+2021-07-10T22:51:58.3627642-05:00:Thread#0:T:done: CalculatorSteps.GivenAFirstNumber(1) (0.0s)
+2021-07-10T22:51:58.3628134-05:00:Thread#0:B:And a second number 1
+2021-07-10T22:51:58.3644012-05:00:Thread#0:T:done: CalculatorSteps.GivenASecondNumber(1) (0.0s)
+2021-07-10T22:51:58.3644487-05:00:Thread#0:B:When two numbers are mutiplied
+2021-07-10T22:51:58.3660293-05:00:Thread#0:T:done: CalculatorSteps.WhenTwoNumberOperation("mutiplied") (0.0s)
+2021-07-10T22:51:58.3660817-05:00:Thread#0:B:Then the result must be 1
+2021-07-10T22:51:58.3676634-05:00:Thread#0:T:done: CalculatorSteps.TheResultMustBe(1) (0.0s)
+2021-07-10T22:51:58.3677957-05:00:Thread#0:Scheduler: get next test for thread 0
+2021-07-10T22:51:58.3678026-05:00:Thread#:Scheduler: at the end of normal test queue
+2021-07-10T22:51:58.3678041-05:00:Thread#0:Scheduler: enumerator for thread is at end
+2021-07-10T22:51:58.3678056-05:00:Thread#0:Scheduler: No more tests for thread
+2021-07-10T22:51:58.3686458-05:00:Thread#0: Test #5/0 is finished on thread #0 as Succeeded within 0.008489 seconds
+2021-07-10T22:51:58.3780686-05:00:Thread#0:T:-> LivingDocPlugin: Output generated in: C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\TestExecution.json
+2021-07-10T22:51:59.5842940-05:00:Thread#-1:Scheduler: get next test for thread -1
+2021-07-10T22:51:59.5843309-05:00:Thread#:Scheduler: at the end of normal test queue
+2021-07-10T22:51:59.5843381-05:00:Thread#-1:Scheduler: enumerator for thread is at end
+2021-07-10T22:51:59.5857836-05:00;Thread#15;Info;test run finished
+2021-07-10T22:51:59.5860632-05:00;Thread#15;Info;publishing test results
+2021-07-10T22:51:59.5861894-05:00;Thread#15;Info;Not publishing results.
+2021-07-10T22:51:59.5862517-05:00;Thread#15;Info;test results published
+2021-07-10T22:51:59.5863166-05:00;Thread#15;Info;generating reports
+2021-07-10T22:51:59.6688365-05:00;Thread#15;Info;Starting external report generation process
+2021-07-10T22:52:01.0747004-05:00;Thread#15;Info;Successfully generated reports.
+2021-07-10T22:52:01.0771352-05:00;Thread#15;Info;Successfully generated reports
+2021-07-10T22:52:01.0805421-05:00:Total: 2
+2021-07-10T22:52:01.0821949-05:00:Succeeded: 2
+2021-07-10T22:52:01.0824876-05:00:Ignored: 0
+2021-07-10T22:52:01.0827149-05:00:Pending: 0
+2021-07-10T22:52:01.0827787-05:00:Skipped: 0
+2021-07-10T22:52:01.0829758-05:00:Failed: 0
+2021-07-10T22:52:01.0895883-05:00;VSTestExecutionThread;Info;Adding attachments to VSTest
+2021-07-10T22:52:01.0897089-05:00;VSTestExecutionThread;Info;adding Test Execution Report 'C:\Repositorios\Cursomicro2021NET\BDD\TestsResults\LibraryTests_LibraryTests_2021-07-10T225157.html'
+========== End of log file ==========

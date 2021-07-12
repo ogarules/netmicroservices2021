@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="86ac43a7-0090-49bf-b3ac-ea6fa1efe6ce" name="OGARCIA@DESKTOP-R6884FH 2021-07-10 22:51:57" runUser="DESKTOP-R6884FH\OGARCIA" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2021-07-10T22:51:57.5396374-05:00" queuing="2021-07-10T22:51:57.5396385-05:00" start="2021-07-10T22:51:54.5596517-05:00" finish="2021-07-10T22:52:01.2598938-05:00" />
+  <TestSettings name="default" id="02a87202-e5c8-4af6-bf02-24c00a72118e">
+    <Deployment runDeploymentRoot="OGARCIA_DESKTOP-R6884FH_2021-07-10_22_51_57" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="26fcbdb6-5e67-4850-9729-e293af3a0ec2" testId="56835f44-2851-367a-8f6f-e340d1d0d1c2" testName="TestAddAuthor" computerName="DESKTOP-R6884FH" duration="00:00:00.0935335" startTime="2021-07-10T22:51:57.3215175-05:00" endTime="2021-07-10T22:51:57.4152548-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="26fcbdb6-5e67-4850-9729-e293af3a0ec2" />
+    <UnitTestResult executionId="f4862ed6-d28e-4b03-af26-317ac1b349fc" testId="278bc42e-1b20-65d1-bd87-2cdbeb387702" testName="TestGetAllAuthors" computerName="DESKTOP-R6884FH" duration="00:00:01.2173523" startTime="2021-07-10T22:51:56.0706658-05:00" endTime="2021-07-10T22:51:57.3100763-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f4862ed6-d28e-4b03-af26-317ac1b349fc" />
+    <UnitTestResult executionId="6e47868b-57d5-4406-91de-f738bedd2784" testId="b1470f55-0127-a63b-1fc7-2b96b1e8749b" testName="TestDeleteAuthor" computerName="DESKTOP-R6884FH" duration="00:00:00.0484014" startTime="2021-07-10T22:51:57.5441393-05:00" endTime="2021-07-10T22:51:57.5926822-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6e47868b-57d5-4406-91de-f738bedd2784" />
+    <UnitTestResult executionId="8a67451a-4529-4779-9708-54d11edbbdd2" testId="39adea9a-257d-9e0b-cba1-60ac5f89d785" testName="TestUpdateAuthor" computerName="DESKTOP-R6884FH" duration="00:00:00.1005916" startTime="2021-07-10T22:51:57.4427045-05:00" endTime="2021-07-10T22:51:57.5437902-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8a67451a-4529-4779-9708-54d11edbbdd2" />
+    <UnitTestResult executionId="65c37ae7-8053-48f2-b18b-fab258618539" testId="ea1af7cd-eae7-1184-0f7e-55b9820a8e64" testName="Add two numbers" computerName="DESKTOP-R6884FH" duration="00:00:00.0581919" startTime="2021-07-10T22:51:58.3005984-05:00" endTime="2021-07-10T22:51:58.3587903-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="65c37ae7-8053-48f2-b18b-fab258618539">
+      <Output>
+        <StdOut>-&gt; -&gt; Loading plugin C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LivingDoc.SpecFlowPlugin.dll&#xD;
+-&gt; -&gt; Loading plugin C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecRun.Runtime.SpecFlowPlugin.dll&#xD;
+-&gt; -&gt; Loading plugin C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LibraryTests.dll&#xD;
+-&gt; -&gt; Missing [assembly:RuntimePlugin] attribute in LibraryTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null. Please check https://go.specflow.org/doc-plugins for details.&#xD;
+-&gt; -&gt; Using specflow.json&#xD;
+&#xD;
+Given a first number 1&#xD;
+-&gt; done: CalculatorSteps.GivenAFirstNumber(1) (0.0s)&#xD;
+&#xD;
+And a second number 2&#xD;
+-&gt; done: CalculatorSteps.GivenASecondNumber(2) (0.0s)&#xD;
+&#xD;
+When two numbers are added&#xD;
+-&gt; done: CalculatorSteps.WhenTwoNumberOperation("added") (0.0s)&#xD;
+&#xD;
+Then the result must be 3&#xD;
+-&gt; done: CalculatorSteps.TheResultMustBe(3) (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c8b1e640-4977-4156-a29f-5d1d7b3e3f6e" testId="41ffe075-9af6-604c-1f7d-96e5a9f84a0b" testName="Multiply two numbers" computerName="DESKTOP-R6884FH" duration="00:00:00.0084890" startTime="2021-07-10T22:51:58.3601459-05:00" endTime="2021-07-10T22:51:58.3686349-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c8b1e640-4977-4156-a29f-5d1d7b3e3f6e">
+      <Output>
+        <StdOut>Given a first number 1&#xD;
+-&gt; done: CalculatorSteps.GivenAFirstNumber(1) (0.0s)&#xD;
+&#xD;
+And a second number 1&#xD;
+-&gt; done: CalculatorSteps.GivenASecondNumber(1) (0.0s)&#xD;
+&#xD;
+When two numbers are mutiplied&#xD;
+-&gt; done: CalculatorSteps.WhenTwoNumberOperation("mutiplied") (0.0s)&#xD;
+&#xD;
+Then the result must be 1&#xD;
+-&gt; done: CalculatorSteps.TheResultMustBe(1) (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="TestDeleteAuthor" storage="c:\repositorios\cursomicro2021net\bdd\librarytests\bin\debug\net5.0\librarytests.dll" id="b1470f55-0127-a63b-1fc7-2b96b1e8749b">
+      <Execution id="6e47868b-57d5-4406-91de-f738bedd2784" />
+      <TestMethod codeBase="C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LibraryTests.dll" adapterTypeName="executor://mstestadapter/v2" className="LibraryTests.BookTests" name="TestDeleteAuthor" />
+    </UnitTest>
+    <UnitTest name="Multiply two numbers in CalculatorOperations" storage="c:\repositorios\cursomicro2021net\bdd\librarytests\bin\debug\net5.0\librarytests.dll" id="41ffe075-9af6-604c-1f7d-96e5a9f84a0b">
+      <Execution id="c8b1e640-4977-4156-a29f-5d1d7b3e3f6e" />
+      <TestMethod codeBase="C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LibraryTests.dll" adapterTypeName="executor://specrun/executorV3.9.7" className="LibraryTests.CalculatorOperations" name="#()::TestAssembly:LibraryTests/Feature:CalculatorOperations/Scenario:Multiply+two+numbers" />
+    </UnitTest>
+    <UnitTest name="Add two numbers in CalculatorOperations" storage="c:\repositorios\cursomicro2021net\bdd\librarytests\bin\debug\net5.0\librarytests.dll" id="ea1af7cd-eae7-1184-0f7e-55b9820a8e64">
+      <Execution id="65c37ae7-8053-48f2-b18b-fab258618539" />
+      <TestMethod codeBase="C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LibraryTests.dll" adapterTypeName="executor://specrun/executorV3.9.7" className="LibraryTests.CalculatorOperations" name="#()::TestAssembly:LibraryTests/Feature:CalculatorOperations/Scenario:Add+two+numbers" />
+    </UnitTest>
+    <UnitTest name="TestGetAllAuthors" storage="c:\repositorios\cursomicro2021net\bdd\librarytests\bin\debug\net5.0\librarytests.dll" id="278bc42e-1b20-65d1-bd87-2cdbeb387702">
+      <Execution id="f4862ed6-d28e-4b03-af26-317ac1b349fc" />
+      <TestMethod codeBase="C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LibraryTests.dll" adapterTypeName="executor://mstestadapter/v2" className="LibraryTests.BookTests" name="TestGetAllAuthors" />
+    </UnitTest>
+    <UnitTest name="TestUpdateAuthor" storage="c:\repositorios\cursomicro2021net\bdd\librarytests\bin\debug\net5.0\librarytests.dll" id="39adea9a-257d-9e0b-cba1-60ac5f89d785">
+      <Execution id="8a67451a-4529-4779-9708-54d11edbbdd2" />
+      <TestMethod codeBase="C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LibraryTests.dll" adapterTypeName="executor://mstestadapter/v2" className="LibraryTests.BookTests" name="TestUpdateAuthor" />
+    </UnitTest>
+    <UnitTest name="TestAddAuthor" storage="c:\repositorios\cursomicro2021net\bdd\librarytests\bin\debug\net5.0\librarytests.dll" id="56835f44-2851-367a-8f6f-e340d1d0d1c2">
+      <Execution id="26fcbdb6-5e67-4850-9729-e293af3a0ec2" />
+      <TestMethod codeBase="C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LibraryTests.dll" adapterTypeName="executor://mstestadapter/v2" className="LibraryTests.BookTests" name="TestAddAuthor" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="56835f44-2851-367a-8f6f-e340d1d0d1c2" executionId="26fcbdb6-5e67-4850-9729-e293af3a0ec2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="278bc42e-1b20-65d1-bd87-2cdbeb387702" executionId="f4862ed6-d28e-4b03-af26-317ac1b349fc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b1470f55-0127-a63b-1fc7-2b96b1e8749b" executionId="6e47868b-57d5-4406-91de-f738bedd2784" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="39adea9a-257d-9e0b-cba1-60ac5f89d785" executionId="8a67451a-4529-4779-9708-54d11edbbdd2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ea1af7cd-eae7-1184-0f7e-55b9820a8e64" executionId="65c37ae7-8053-48f2-b18b-fab258618539" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="41ffe075-9af6-604c-1f7d-96e5a9f84a0b" executionId="c8b1e640-4977-4156-a29f-5d1d7b3e3f6e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="6" executed="6" passed="6" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>SpecFlow+Runner execution started&#xD;
+SpecFlow+Runner 3.9.7 in Framework net50 in x64 mode execution started&#xD;
+TestAdapter Location: C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\TechTalk.SpecRun.VisualStudio.TestAdapter.dll&#xD;
+Current UserName: 'OGARCIA', MachineName: 'DESKTOP-R6884FH'&#xD;
+SpecRun: running tests in C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LibraryTests.dll&#xD;
+Output folder configured to "C:\Repositorios\Cursomicro2021NET\BDD\TestsResults" (default)&#xD;
+Profile: LibraryTests&#xD;
+Log file path: C:\Repositorios\Cursomicro2021NET\BDD\TestsResults\LibraryTests_LibraryTests_2021-07-10T225157.log&#xD;
+Checking activation&#xD;
+Activated.&#xD;
+Activation check completed&#xD;
+Starting test run&#xD;
+Discovering target: Default&#xD;
+Discovering tests from assembly: C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LibraryTests.dll&#xD;
+Discovered tests from assembly: C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LibraryTests.dll&#xD;
+Scenario: Add two numbers in CalculatorOperations -&gt; Succeeded on thread #0&#xD;
+Scenario: Multiply two numbers in CalculatorOperations -&gt; Succeeded on thread #0&#xD;
+test run finished&#xD;
+publishing test results&#xD;
+Not publishing results.&#xD;
+test results published&#xD;
+generating reports&#xD;
+Starting external report generation process&#xD;
+Successfully generated reports.&#xD;
+Successfully generated reports&#xD;
+Result: all tests passed&#xD;
+  Total: 2&#xD;
+  Succeeded: 2&#xD;
+  Ignored: 0&#xD;
+  Pending: 0&#xD;
+  Skipped: 0&#xD;
+  Failed: 0&#xD;
+&#xD;
+  Execution Time: 00:00:01.5416433&#xD;
+Report file: file:///C:/Repositorios/Cursomicro2021NET/BDD/TestsResults/LibraryTests_LibraryTests_2021-07-10T225157.html&#xD;
+Adding attachments to VSTest&#xD;
+adding Test Execution Report 'C:\Repositorios\Cursomicro2021NET\BDD\TestsResults\LibraryTests_LibraryTests_2021-07-10T225157.html'&#xD;
+Log file: file:///C:/Repositorios/Cursomicro2021NET/BDD/TestsResults/LibraryTests_LibraryTests_2021-07-10T225157.log&#xD;
+SpecFlow+Runner execution finished&#xD;
+</StdOut>
+    </Output>
+    <ResultFiles>
+      <ResultFile path="DESKTOP-R6884FH\LibraryTests_LibraryTests_2021-07-10T225157.log" />
+      <ResultFile path="DESKTOP-R6884FH\LibraryTests_LibraryTests_2021-07-10T225157.html" />
+    </ResultFiles>
+    <CollectorDataEntries>
+      <Collector agentName="DESKTOP-R6884FH" uri="datacollector://microsoft/CodeCoverage/2.0" collectorDisplayName="Code Coverage">
+        <UriAttachments>
+          <UriAttachment>
+            <A href="DESKTOP-R6884FH\OGARCIA_DESKTOP-R6884FH_2021-07-10.22_51_55.coverage"></A>
+          </UriAttachment>
+        </UriAttachments>
+      </Collector>
+    </CollectorDataEntries>
+  </ResultSummary>
+</TestRun>

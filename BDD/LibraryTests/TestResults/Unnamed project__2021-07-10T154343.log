@@ -1,0 +1,201 @@
+﻿2021-07-10T15:43:43.2195960-05:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2021-07-10T15:43:43.2197158-05:00;VSTestExecutionThread;Info;SpecFlow+Runner 3.9.7 in Framework net50 in x64 mode execution started
+2021-07-10T15:43:43.2197201-05:00;VSTestExecutionThread;Info;TestAdapter Location: C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2021-07-10T15:43:43.2219428-05:00;VSTestExecutionThread;Info;Current UserName: 'OGARCIA', MachineName: 'DESKTOP-R6884FH'
+2021-07-10T15:43:43.2692558-05:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LibraryTests.dll
+2021-07-10T15:43:43.2695440-05:00;VSTestExecutionThread;Info;Output folder configured to "C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\TestResults" (default)
+2021-07-10T15:43:43.2696406-05:00;VSTestExecutionThread;Info;Profile: 
+2021-07-10T15:43:43.4515064-05:00;VSTestExecutionThread;Info;Log file path: C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\TestResults\Unnamed project__2021-07-10T154343.log
+2021-07-10T15:43:43.5192421-05:00;Thread#16;Info;Checking activation
+2021-07-10T15:43:44.4643863-05:00;Thread#16;Info;Activated.
+2021-07-10T15:43:44.4646931-05:00;Thread#16;Info;Activation check completed
+2021-07-10T15:43:44.4648112-05:00;Thread#16;Info;Starting test run
+2021-07-10T15:43:44.8886047-05:00;Thread#16;Info;Discovering target: Default
+2021-07-10T15:43:44.8888418-05:00;Thread#16;Info;Discovering tests from assembly: C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LibraryTests.dll
+2021-07-10T15:43:45.0417165-05:00;Thread#16;Info;Discovered tests from assembly: C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LibraryTests.dll
+2021-07-10T15:43:45.0430845-05:00:Test Suite Dump
+2021-07-10T15:43:45.0446167-05:00:#0: Unnamed project/ - 
+2021-07-10T15:43:45.0446622-05:00:#1: Default - 
+2021-07-10T15:43:45.0446678-05:00:#2: LibraryTests - 
+2021-07-10T15:43:45.0446711-05:00:#3: CalculatorOperations - 
+2021-07-10T15:43:45.0469255-05:00:#4: Add two numbers - TestAssembly:LibraryTests/Feature:CalculatorOperations/Scenario:Add+two+numbers
+2021-07-10T15:43:45.0469909-05:00:#5: Multiply two numbers - TestAssembly:LibraryTests/Feature:CalculatorOperations/Scenario:Multiply+two+numbers
+2021-07-10T15:43:45.0470332-05:00:End: Test Suite Dump
+2021-07-10T15:43:45.0801079-05:00:Thread#0:Scheduler: get next test for thread 0
+2021-07-10T15:43:45.0836116-05:00:Thread#:Scheduler: testitem #4 from normal test queue 
+2021-07-10T15:43:45.0837729-05:00:Thread#0:Scheduler: considering testitem #4 for thread 0
+2021-07-10T15:43:45.0891162-05:00:Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+2021-07-10T15:43:45.0891569-05:00:Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+2021-07-10T15:43:45.0891631-05:00:Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+2021-07-10T15:43:45.0891700-05:00:Thread#0:Scheduler: using testitem #4 for thread 0
+2021-07-10T15:43:45.0902212-05:00:Thread#0:Scheduler: Test #4 is scheduled for thread
+2021-07-10T15:43:45.0919523-05:00:Thread#0:Scheduler: with testItemExecutionIndex 0
+2021-07-10T15:43:45.0948315-05:00:Thread #0: creating new test thread executor for LibraryTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+2021-07-10T15:43:45.0977237-05:00:Thread #0: Creating test assembly executor for execution model OutProc
+2021-07-10T15:43:45.0979883-05:00:Thread #0: Creating test assembly executor for execution model OutProc
+2021-07-10T15:43:45.1003734-05:00:Thread #0: using TechTalk.SpecRun.Framework.Execution.OutOfProc.StreamJsonRPC.OutOfProcessTestAssemblyExecutorHost to execute tests
+2021-07-10T15:43:45.1026524-05:00:starting Out Of Process Executor
+2021-07-10T15:43:45.1050464-05:00:Assembly resolving Microsoft.VisualStudio.Validation, Version=15.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-07-10T15:43:45.1082167-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' from .deps.json file
+2021-07-10T15:43:45.1082409-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Validation' from .deps.json
+2021-07-10T15:43:45.1094076-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0'
+2021-07-10T15:43:45.1097345-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\Microsoft.VisualStudio.Validation.dll'
+2021-07-10T15:43:45.1098825-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\Microsoft.VisualStudio.Validation.exe'
+2021-07-10T15:43:45.1099429-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0'
+2021-07-10T15:43:45.1101452-05:00:TargetFramework: .NETCoreApp,Version=v5.0
+2021-07-10T15:43:45.1106662-05:00:Tfm: netcoreapp5.0
+2021-07-10T15:43:45.1106805-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0'
+2021-07-10T15:43:45.1106867-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0\Microsoft.VisualStudio.Validation.dll'
+2021-07-10T15:43:45.1107682-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0\Microsoft.VisualStudio.Validation.exe'
+2021-07-10T15:43:45.1108261-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0'
+2021-07-10T15:43:45.1193016-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6'
+2021-07-10T15:43:45.1193207-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6\Microsoft.VisualStudio.Validation.dll'
+2021-07-10T15:43:45.1193823-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6\Microsoft.VisualStudio.Validation.exe'
+2021-07-10T15:43:45.1194170-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6'
+2021-07-10T15:43:45.1195422-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6'
+2021-07-10T15:43:45.1195501-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6\Microsoft.VisualStudio.Validation.dll'
+2021-07-10T15:43:45.1195922-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6\Microsoft.VisualStudio.Validation.exe'
+2021-07-10T15:43:45.1196223-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6'
+2021-07-10T15:43:45.1197384-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6'
+2021-07-10T15:43:45.1197460-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6\Microsoft.VisualStudio.Validation.dll'
+2021-07-10T15:43:45.1198052-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6\Microsoft.VisualStudio.Validation.exe'
+2021-07-10T15:43:45.1198561-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6'
+2021-07-10T15:43:45.1230704-05:00:Starting callback TCP Rpc server
+2021-07-10T15:43:45.1385295-05:00:Asynchronously starting background TCP Rpc Server on port 32768
+2021-07-10T15:43:45.1385761-05:00:Started callback TCP Rpc server on port 32768
+2021-07-10T15:43:45.1385803-05:00:Starting logger TCP Rpc server
+2021-07-10T15:43:45.1421897-05:00:Asynchronously starting background TCP Rpc Server on port 32769
+2021-07-10T15:43:45.1422376-05:00:Started logger TCP Rpc server on port 32769
+2021-07-10T15:43:45.2353730-05:00:Executing test executor at 'dotnet' 'exec "C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\net5.0\TechTalk.SpecRun.Framework.Executor.anycpu.net5_0.dll" --remoteRunnerPid 46724 --uniqueId "2021-07-10T154343" --outputFolder "C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\TestResults" --callbackPort 32768 --loggerPort 32769' in 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0'
+2021-07-10T15:43:45.2455450-05:00:Executor with PID 48988 has been started successfully.
+2021-07-10T15:43:45.2567372-05:00:Out of Process Executor 48988 started
+2021-07-10T15:43:45.2567984-05:00:Waiting for endpoint
+2021-07-10T15:43:45.7765727-05:00:Assembly resolving Microsoft.VisualStudio.Threading, Version=15.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-07-10T15:43:45.7766028-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' from .deps.json file
+2021-07-10T15:43:45.7766093-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Threading' from .deps.json
+2021-07-10T15:43:45.7766193-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0'
+2021-07-10T15:43:45.7766228-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\Microsoft.VisualStudio.Threading.dll'
+2021-07-10T15:43:45.7766874-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\Microsoft.VisualStudio.Threading.exe'
+2021-07-10T15:43:45.7767428-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0'
+2021-07-10T15:43:45.7767542-05:00:TargetFramework: .NETCoreApp,Version=v5.0
+2021-07-10T15:43:45.7768247-05:00:Tfm: netcoreapp5.0
+2021-07-10T15:43:45.7768390-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0'
+2021-07-10T15:43:45.7768448-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0\Microsoft.VisualStudio.Threading.dll'
+2021-07-10T15:43:45.7769311-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0\Microsoft.VisualStudio.Threading.exe'
+2021-07-10T15:43:45.7769939-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0'
+2021-07-10T15:43:45.7779457-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6'
+2021-07-10T15:43:45.7779729-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6\Microsoft.VisualStudio.Threading.dll'
+2021-07-10T15:43:45.7780492-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6\Microsoft.VisualStudio.Threading.exe'
+2021-07-10T15:43:45.7781033-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6'
+2021-07-10T15:43:45.7782765-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6'
+2021-07-10T15:43:45.7782926-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6\Microsoft.VisualStudio.Threading.dll'
+2021-07-10T15:43:45.7783899-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6\Microsoft.VisualStudio.Threading.exe'
+2021-07-10T15:43:45.7784573-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6'
+2021-07-10T15:43:45.7786182-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6'
+2021-07-10T15:43:45.7786284-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6\Microsoft.VisualStudio.Threading.dll'
+2021-07-10T15:43:45.7786804-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6\Microsoft.VisualStudio.Threading.exe'
+2021-07-10T15:43:45.7787158-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6'
+2021-07-10T15:43:46.1832080-05:00:Remote executor port received: 32770
+2021-07-10T15:43:46.1841115-05:00:Creating executor TCP client on port 32770
+2021-07-10T15:43:46.1848941-05:00:Created executor TCP client on port 32770
+2021-07-10T15:43:46.1849186-05:00:Connecting to remote executor TCP server
+2021-07-10T15:43:46.1866255-05:00:Connected remote executor TCP server
+2021-07-10T15:43:46.1873550-05:00:trying to connect to Out of Process Executor the 1 attempt
+2021-07-10T15:43:46.1873826-05:00:Connection to Out of Process Executor established in the 1 attempt
+2021-07-10T15:43:46.5233643-05:00:2021-07-10T15:43:46.5221372-05:00:OutOfProcessTestAssemblyExecutor: initialized for C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LibraryTests.dll on test thread #0
+2021-07-10T15:43:46.5455467-05:00:Endpoint 48988 started
+2021-07-10T15:43:46.5754207-05:00:2021-07-10T15:43:46.5750697-05:00:OutOfProcessTestAssemblyExecutor: running tests...
+2021-07-10T15:43:46.7890674-05:00:2021-07-10T15:43:46.7885037-05:00:Assembly resolving TechTalk.SpecFlow, Version=3.9.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41
+2021-07-10T15:43:46.7937273-05:00:2021-07-10T15:43:46.7931533-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecFlow' from .deps.json file
+2021-07-10T15:43:46.7973294-05:00:2021-07-10T15:43:46.7968215-05:00:[AssemblyCache] Resolved 'TechTalk.SpecFlow' to 'C:\Users\OGARCIA\.nuget\packages\specflow\3.9.8\lib\netstandard2.0\TechTalk.SpecFlow.dll'
+2021-07-10T15:43:46.8384160-05:00:2021-07-10T15:43:46.8378401-05:00:Assembly resolving SpecFlow.Internal.Json, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41
+2021-07-10T15:43:46.8392136-05:00:2021-07-10T15:43:46.8387946-05:00:[AssemblyCache] Trying to resolve 'SpecFlow.Internal.Json' from .deps.json file
+2021-07-10T15:43:46.8404548-05:00:2021-07-10T15:43:46.8398481-05:00:[AssemblyCache] Resolved 'SpecFlow.Internal.Json' to 'C:\Users\OGARCIA\.nuget\packages\specflow.internal.json\1.0.8\lib\netstandard2.0\SpecFlow.Internal.Json.dll'
+2021-07-10T15:43:46.9014603-05:00:2021-07-10T15:43:46.9004462-05:00:OutOfProcessTestAssemblyExecutor: RunTest error: System.ArgumentNullException: Value cannot be null. (Parameter 'jsonContent')
+   at TechTalk.SpecFlow.Configuration.JsonConfig.JsonConfigurationLoader.LoadJson(SpecFlowConfiguration specFlowConfiguration, String jsonContent) in D:\a\1\s\TechTalk.SpecFlow\Configuration\JsonConfig\JsonConfigurationLoader.cs:line 13
+   at TechTalk.SpecFlow.Configuration.ConfigurationLoader.LoadJson(SpecFlowConfiguration specFlowConfiguration, String jsonContent) in D:\a\1\s\TechTalk.SpecFlow\Configuration\ConfigurationLoader.cs:line 169
+   at TechTalk.SpecFlow.Configuration.ConfigurationLoader.LoadJson(SpecFlowConfiguration specFlowConfiguration) in D:\a\1\s\TechTalk.SpecFlow\Configuration\ConfigurationLoader.cs:line 164
+   at TechTalk.SpecFlow.Configuration.ConfigurationLoader.Load(SpecFlowConfiguration specFlowConfiguration) in D:\a\1\s\TechTalk.SpecFlow\Configuration\ConfigurationLoader.cs:line 91
+   at TechTalk.SpecFlow.Configuration.DefaultRuntimeConfigurationProvider.LoadConfiguration(SpecFlowConfiguration specFlowConfiguration) in D:\a\1\s\TechTalk.SpecFlow\Configuration\DefaultRuntimeConfigurationProvider.cs:line 17
+   at TechTalk.SpecFlow.Infrastructure.ContainerBuilder.CreateGlobalContainer(Assembly testAssembly, IRuntimeConfigurationProvider configurationProvider) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\ContainerBuilder.cs:line 51
+   at TechTalk.SpecFlow.TestRunnerManager.CreateTestRunnerManager(Assembly testAssembly, IContainerBuilder containerBuilder) in D:\a\1\s\TechTalk.SpecFlow\TestRunnerManager.cs:line 215
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunnerManager(Assembly testAssembly, IContainerBuilder containerBuilder, Boolean createIfMissing) in D:\a\1\s\TechTalk.SpecFlow\TestRunnerManager.cs:line 203
+   at TechTalk.SpecFlow.TestRunnerManager.OnTestRunStart(Assembly testAssembly, IContainerBuilder containerBuilder) in D:\a\1\s\TechTalk.SpecFlow\TestRunnerManager.cs:line 232
+   at LibraryTests_SpecFlowPlusRunnerAssemblyHooks.AssemblyInitialize() in C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\obj\Debug\net5.0\SpecFlow.Plus.Runner.AssemblyHooks.cs:line 12
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.ExecuteInternal(ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TestAssemblyExecutor.RunAssemblyInitializeExecutors(ITestAssemblyExecutorsProvider testAssemblyExecutorsProvider, ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TestAssemblyExecutor.RunTests(ITestAssemblyExecutorState executorState, ITestAssemblyExecutorsProvider testAssemblyExecutorsProvider, ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TestAssemblyExecutor.RunTests(TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.Execution.InProcess.InProcAppDomainTestAssemblyExecutor.RunTests(TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.Execution.OutOfProcess.OutOfProcessTestAssemblyExecutor.RunTests(TestThreadState testThreadState)
+2021-07-10T15:43:46.9023064-05:00:2021-07-10T15:43:46.9019576-05:00:OutOfProcessTestAssemblyExecutorReceiver - Error at RunTests - System.ArgumentNullException: Value cannot be null. (Parameter 'jsonContent')
+   at TechTalk.SpecFlow.Configuration.JsonConfig.JsonConfigurationLoader.LoadJson(SpecFlowConfiguration specFlowConfiguration, String jsonContent) in D:\a\1\s\TechTalk.SpecFlow\Configuration\JsonConfig\JsonConfigurationLoader.cs:line 13
+   at TechTalk.SpecFlow.Configuration.ConfigurationLoader.LoadJson(SpecFlowConfiguration specFlowConfiguration, String jsonContent) in D:\a\1\s\TechTalk.SpecFlow\Configuration\ConfigurationLoader.cs:line 169
+   at TechTalk.SpecFlow.Configuration.ConfigurationLoader.LoadJson(SpecFlowConfiguration specFlowConfiguration) in D:\a\1\s\TechTalk.SpecFlow\Configuration\ConfigurationLoader.cs:line 164
+   at TechTalk.SpecFlow.Configuration.ConfigurationLoader.Load(SpecFlowConfiguration specFlowConfiguration) in D:\a\1\s\TechTalk.SpecFlow\Configuration\ConfigurationLoader.cs:line 91
+   at TechTalk.SpecFlow.Configuration.DefaultRuntimeConfigurationProvider.LoadConfiguration(SpecFlowConfiguration specFlowConfiguration) in D:\a\1\s\TechTalk.SpecFlow\Configuration\DefaultRuntimeConfigurationProvider.cs:line 17
+   at TechTalk.SpecFlow.Infrastructure.ContainerBuilder.CreateGlobalContainer(Assembly testAssembly, IRuntimeConfigurationProvider configurationProvider) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\ContainerBuilder.cs:line 51
+   at TechTalk.SpecFlow.TestRunnerManager.CreateTestRunnerManager(Assembly testAssembly, IContainerBuilder containerBuilder) in D:\a\1\s\TechTalk.SpecFlow\TestRunnerManager.cs:line 215
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunnerManager(Assembly testAssembly, IContainerBuilder containerBuilder, Boolean createIfMissing) in D:\a\1\s\TechTalk.SpecFlow\TestRunnerManager.cs:line 203
+   at TechTalk.SpecFlow.TestRunnerManager.OnTestRunStart(Assembly testAssembly, IContainerBuilder containerBuilder) in D:\a\1\s\TechTalk.SpecFlow\TestRunnerManager.cs:line 232
+   at LibraryTests_SpecFlowPlusRunnerAssemblyHooks.AssemblyInitialize() in C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\obj\Debug\net5.0\SpecFlow.Plus.Runner.AssemblyHooks.cs:line 12
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.ExecuteInternal(ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TestAssemblyExecutor.RunAssemblyInitializeExecutors(ITestAssemblyExecutorsProvider testAssemblyExecutorsProvider, ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TestAssemblyExecutor.RunTests(ITestAssemblyExecutorState executorState, ITestAssemblyExecutorsProvider testAssemblyExecutorsProvider, ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TestAssemblyExecutor.RunTests(TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.Execution.InProcess.InProcAppDomainTestAssemblyExecutor.RunTests(TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.Execution.OutOfProcess.OutOfProcessTestAssemblyExecutor.RunTests(TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.Execution.OutOfProcess.OutOfProcessTestAssemblyExecutorReceiver.RunTests(TestThreadState testThreadState)
+2021-07-10T15:43:46.9502019-05:00:test thread #0 error: StreamJsonRpc.RemoteInvocationException: Value cannot be null. (Parameter 'jsonContent')
+   at StreamJsonRpc.JsonRpc.InvokeCoreAsync[TResult](Nullable`1 id, String targetName, IReadOnlyList`1 arguments, CancellationToken cancellationToken, Boolean isParameterObject)
+   at TechTalk.SpecFlow.Plus.RPC.TcpRpcClient.Invoke[T](String methodName, Object[] parameters)
+   at TechTalk.SpecFlow.Plus.RPC.AsyncHelper.RunSync[TResult](Func`1 func)
+   at TechTalk.SpecRun.Framework.Execution.OutOfProc.StreamJsonRPC.OutOfProcessTestAssemblyExecutorClient.RunTests(TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.Execution.OutOfProc.StreamJsonRPC.RemoteExecutor.RunTests(TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.Execution.OutOfProc.StreamJsonRPC.OutOfProcessTestAssemblyExecutorHost.RunTests(TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.TestThread.RunNonEmptyTestSuite(CancellationToken cancellationToken, TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.TestThread.Run(ITestExecutionManager executionManagerForRun, CancellationToken cancellationToken)
+   at TechTalk.SpecRun.Framework.AsyncTestThreadRunner.RunSync(TestExecutionManager executionManager, CancellationToken cancellationToken)
+2021-07-10T15:43:46.9513643-05:00:test thread error: TechTalk.SpecRun.Framework.SpecRunException: At least one test thread aborted.
+ ---> StreamJsonRpc.RemoteInvocationException: Value cannot be null. (Parameter 'jsonContent')
+   at StreamJsonRpc.JsonRpc.InvokeCoreAsync[TResult](Nullable`1 id, String targetName, IReadOnlyList`1 arguments, CancellationToken cancellationToken, Boolean isParameterObject)
+   at TechTalk.SpecFlow.Plus.RPC.TcpRpcClient.Invoke[T](String methodName, Object[] parameters)
+   at TechTalk.SpecFlow.Plus.RPC.AsyncHelper.RunSync[TResult](Func`1 func)
+   at TechTalk.SpecRun.Framework.Execution.OutOfProc.StreamJsonRPC.OutOfProcessTestAssemblyExecutorClient.RunTests(TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.Execution.OutOfProc.StreamJsonRPC.RemoteExecutor.RunTests(TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.Execution.OutOfProc.StreamJsonRPC.OutOfProcessTestAssemblyExecutorHost.RunTests(TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.TestThread.RunNonEmptyTestSuite(CancellationToken cancellationToken, TestThreadState testThreadState)
+   at TechTalk.SpecRun.Framework.TestThread.Run(ITestExecutionManager executionManagerForRun, CancellationToken cancellationToken)
+   at TechTalk.SpecRun.Framework.AsyncTestThreadRunner.RunSync(TestExecutionManager executionManager, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+2021-07-10T15:43:46.9582298-05:00:Thread#-1: Test #4/0 is started on thread #-1
+2021-07-10T15:43:46.9597233-05:00:Thread#-1: Test #4/0 is finished on thread #-1 as Skipped within 0.0006437 seconds
+2021-07-10T15:43:46.9618678-05:00:Thread#-1:Scheduler: get next test for thread -1
+2021-07-10T15:43:46.9619074-05:00:Thread#:Scheduler: testitem #5 from normal test queue 
+2021-07-10T15:43:46.9619125-05:00:Thread#-1:Scheduler: considering testitem #5 for thread -1
+2021-07-10T15:43:46.9619157-05:00:Thread#-1:Scheduler: using testitem #5 for thread -1
+2021-07-10T15:43:46.9619188-05:00:Thread#-1:Scheduler: Test #5 is scheduled for thread
+2021-07-10T15:43:46.9619544-05:00:Thread#-1: Test #5/0 is started on thread #-1
+2021-07-10T15:43:46.9620055-05:00:Thread#-1: Test #5/0 is finished on thread #-1 as Skipped within 1.09E-05 seconds
+2021-07-10T15:43:46.9620513-05:00:Thread#-1:Scheduler: get next test for thread -1
+2021-07-10T15:43:46.9620615-05:00:Thread#:Scheduler: at the end of normal test queue
+2021-07-10T15:43:46.9620644-05:00:Thread#-1:Scheduler: enumerator for thread is at end
+2021-07-10T15:43:46.9814984-05:00;Thread#16;Info;test run finished
+2021-07-10T15:43:46.9817838-05:00;Thread#16;Info;publishing test results
+2021-07-10T15:43:46.9821247-05:00;Thread#16;Info;Not publishing results.
+2021-07-10T15:43:46.9823180-05:00;Thread#16;Info;test results published
+2021-07-10T15:43:46.9824997-05:00;Thread#16;Info;generating reports
+2021-07-10T15:43:47.1481785-05:00;Thread#16;Info;Starting external report generation process
+2021-07-10T15:43:49.9036442-05:00;Thread#16;Info;Successfully generated reports.
+2021-07-10T15:43:49.9067659-05:00;Thread#16;Info;Successfully generated reports
+2021-07-10T15:43:49.9354605-05:00:Total: 2
+2021-07-10T15:43:49.9388355-05:00:Succeeded: 0
+2021-07-10T15:43:49.9394122-05:00:Ignored: 0
+2021-07-10T15:43:49.9398517-05:00:Pending: 0
+2021-07-10T15:43:49.9398677-05:00:Skipped: 2
+2021-07-10T15:43:49.9401847-05:00:Failed: 0
+2021-07-10T15:43:49.9422704-05:00;VSTestExecutionThread;Info;Adding attachments to VSTest
+2021-07-10T15:43:49.9423480-05:00;VSTestExecutionThread;Info;adding Test Execution Report 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\TestResults\Unnamed project__2021-07-10T154343.html'
+========== End of log file ==========

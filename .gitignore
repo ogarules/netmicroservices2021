@@ -1,0 +1,7 @@
+**/*.dll
+**/*.pdb
+**/*.exe
+**/bin/**/*.*
+**/obj/**/*.*
+BDD/.sonarqube/conf/Sonar-cs.ruleset
+BDD/.sonarqube/

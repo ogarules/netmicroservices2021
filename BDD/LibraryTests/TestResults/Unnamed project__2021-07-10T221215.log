@@ -1,0 +1,216 @@
+﻿2021-07-10T22:12:15.6017341-05:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2021-07-10T22:12:15.6018159-05:00;VSTestExecutionThread;Info;SpecFlow+Runner 3.9.7 in Framework net50 in x64 mode execution started
+2021-07-10T22:12:15.6018189-05:00;VSTestExecutionThread;Info;TestAdapter Location: C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2021-07-10T22:12:15.6031291-05:00;VSTestExecutionThread;Info;Current UserName: 'OGARCIA', MachineName: 'DESKTOP-R6884FH'
+2021-07-10T22:12:15.6244726-05:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LibraryTests.dll
+2021-07-10T22:12:15.6246107-05:00;VSTestExecutionThread;Info;Output folder configured to "C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\TestResults" (default)
+2021-07-10T22:12:15.6246489-05:00;VSTestExecutionThread;Info;Profile: 
+2021-07-10T22:12:15.6465773-05:00;VSTestExecutionThread;Info;Log file path: C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\TestResults\Unnamed project__2021-07-10T221215.log
+2021-07-10T22:12:15.6494203-05:00;Thread#18;Info;Checking activation
+2021-07-10T22:12:15.7011922-05:00;Thread#18;Info;Activated.
+2021-07-10T22:12:15.7013548-05:00;Thread#18;Info;Activation check completed
+2021-07-10T22:12:15.7013994-05:00;Thread#18;Info;Starting test run
+2021-07-10T22:12:15.7519136-05:00;Thread#18;Info;Discovering target: Default
+2021-07-10T22:12:15.7520882-05:00;Thread#18;Info;Discovering tests from assembly: C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LibraryTests.dll
+2021-07-10T22:12:15.8123962-05:00;Thread#18;Info;Discovered tests from assembly: C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LibraryTests.dll
+2021-07-10T22:12:15.8134346-05:00:Test Suite Dump
+2021-07-10T22:12:15.8146275-05:00:#0: Unnamed project/ - 
+2021-07-10T22:12:15.8146669-05:00:#1: Default - 
+2021-07-10T22:12:15.8146702-05:00:#2: LibraryTests - 
+2021-07-10T22:12:15.8146722-05:00:#3: CalculatorOperations - 
+2021-07-10T22:12:15.8164867-05:00:#4: Add two numbers - TestAssembly:LibraryTests/Feature:CalculatorOperations/Scenario:Add+two+numbers
+2021-07-10T22:12:15.8165436-05:00:#5: Multiply two numbers - TestAssembly:LibraryTests/Feature:CalculatorOperations/Scenario:Multiply+two+numbers
+2021-07-10T22:12:15.8165808-05:00:End: Test Suite Dump
+2021-07-10T22:12:15.8303186-05:00:Thread#0:Scheduler: get next test for thread 0
+2021-07-10T22:12:15.8318999-05:00:Thread#:Scheduler: testitem #4 from normal test queue 
+2021-07-10T22:12:15.8320199-05:00:Thread#0:Scheduler: considering testitem #4 for thread 0
+2021-07-10T22:12:15.8351228-05:00:Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+2021-07-10T22:12:15.8351419-05:00:Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+2021-07-10T22:12:15.8351444-05:00:Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+2021-07-10T22:12:15.8351476-05:00:Thread#0:Scheduler: using testitem #4 for thread 0
+2021-07-10T22:12:15.8357615-05:00:Thread#0:Scheduler: Test #4 is scheduled for thread
+2021-07-10T22:12:15.8364549-05:00:Thread#0:Scheduler: with testItemExecutionIndex 0
+2021-07-10T22:12:15.8380623-05:00:Thread #0: creating new test thread executor for LibraryTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+2021-07-10T22:12:15.8395991-05:00:Thread #0: Creating test assembly executor for execution model OutProc
+2021-07-10T22:12:15.8397291-05:00:Thread #0: Creating test assembly executor for execution model OutProc
+2021-07-10T22:12:15.8410635-05:00:Thread #0: using TechTalk.SpecRun.Framework.Execution.OutOfProc.StreamJsonRPC.OutOfProcessTestAssemblyExecutorHost to execute tests
+2021-07-10T22:12:15.8425142-05:00:starting Out Of Process Executor
+2021-07-10T22:12:15.8439728-05:00:Assembly resolving Microsoft.VisualStudio.Validation, Version=15.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-07-10T22:12:15.8461147-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' from .deps.json file
+2021-07-10T22:12:15.8461359-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Validation' from .deps.json
+2021-07-10T22:12:15.8471698-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0'
+2021-07-10T22:12:15.8475152-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\Microsoft.VisualStudio.Validation.dll'
+2021-07-10T22:12:15.8476468-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\Microsoft.VisualStudio.Validation.exe'
+2021-07-10T22:12:15.8477052-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0'
+2021-07-10T22:12:15.8479336-05:00:TargetFramework: .NETCoreApp,Version=v5.0
+2021-07-10T22:12:15.8484307-05:00:Tfm: netcoreapp5.0
+2021-07-10T22:12:15.8484460-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0'
+2021-07-10T22:12:15.8484490-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0\Microsoft.VisualStudio.Validation.dll'
+2021-07-10T22:12:15.8485181-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0\Microsoft.VisualStudio.Validation.exe'
+2021-07-10T22:12:15.8485664-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0'
+2021-07-10T22:12:15.8581251-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6'
+2021-07-10T22:12:15.8581448-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6\Microsoft.VisualStudio.Validation.dll'
+2021-07-10T22:12:15.8582084-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6\Microsoft.VisualStudio.Validation.exe'
+2021-07-10T22:12:15.8582540-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6'
+2021-07-10T22:12:15.8584042-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6'
+2021-07-10T22:12:15.8584131-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6\Microsoft.VisualStudio.Validation.dll'
+2021-07-10T22:12:15.8584655-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6\Microsoft.VisualStudio.Validation.exe'
+2021-07-10T22:12:15.8585074-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6'
+2021-07-10T22:12:15.8586019-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6'
+2021-07-10T22:12:15.8586091-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6\Microsoft.VisualStudio.Validation.dll'
+2021-07-10T22:12:15.8586382-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6\Microsoft.VisualStudio.Validation.exe'
+2021-07-10T22:12:15.8586616-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Validation' in folder 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6'
+2021-07-10T22:12:15.8615400-05:00:Starting callback TCP Rpc server
+2021-07-10T22:12:15.8746617-05:00:Asynchronously starting background TCP Rpc Server on port 32768
+2021-07-10T22:12:15.8747055-05:00:Started callback TCP Rpc server on port 32768
+2021-07-10T22:12:15.8747086-05:00:Starting logger TCP Rpc server
+2021-07-10T22:12:15.8777842-05:00:Asynchronously starting background TCP Rpc Server on port 32769
+2021-07-10T22:12:15.8778366-05:00:Started logger TCP Rpc server on port 32769
+2021-07-10T22:12:15.9432142-05:00:Executing test executor at 'dotnet' 'exec "C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\net5.0\TechTalk.SpecRun.Framework.Executor.anycpu.net5_0.dll" --remoteRunnerPid 51028 --uniqueId "2021-07-10T221215" --outputFolder "C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\TestResults" --callbackPort 32768 --loggerPort 32769' in 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0'
+2021-07-10T22:12:15.9480749-05:00:Executor with PID 44924 has been started successfully.
+2021-07-10T22:12:15.9500104-05:00:Out of Process Executor 44924 started
+2021-07-10T22:12:15.9500343-05:00:Waiting for endpoint
+2021-07-10T22:12:16.5922987-05:00:Assembly resolving Microsoft.VisualStudio.Threading, Version=15.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-07-10T22:12:16.5923199-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' from .deps.json file
+2021-07-10T22:12:16.5923224-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Threading' from .deps.json
+2021-07-10T22:12:16.5923272-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0'
+2021-07-10T22:12:16.5923285-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\Microsoft.VisualStudio.Threading.dll'
+2021-07-10T22:12:16.5923584-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\Microsoft.VisualStudio.Threading.exe'
+2021-07-10T22:12:16.5923824-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0'
+2021-07-10T22:12:16.5923856-05:00:TargetFramework: .NETCoreApp,Version=v5.0
+2021-07-10T22:12:16.5924050-05:00:Tfm: netcoreapp5.0
+2021-07-10T22:12:16.5924090-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0'
+2021-07-10T22:12:16.5924114-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0\Microsoft.VisualStudio.Threading.dll'
+2021-07-10T22:12:16.5924511-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0\Microsoft.VisualStudio.Threading.exe'
+2021-07-10T22:12:16.5924812-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecFlowPlusRunner\netcoreapp5.0'
+2021-07-10T22:12:16.5928881-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6'
+2021-07-10T22:12:16.5928962-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6\Microsoft.VisualStudio.Threading.dll'
+2021-07-10T22:12:16.5929283-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6\Microsoft.VisualStudio.Threading.exe'
+2021-07-10T22:12:16.5929519-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.6'
+2021-07-10T22:12:16.5930250-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6'
+2021-07-10T22:12:16.5930311-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6\Microsoft.VisualStudio.Threading.dll'
+2021-07-10T22:12:16.5930589-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6\Microsoft.VisualStudio.Threading.exe'
+2021-07-10T22:12:16.5930808-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.6'
+2021-07-10T22:12:16.5931570-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6'
+2021-07-10T22:12:16.5931624-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6\Microsoft.VisualStudio.Threading.dll'
+2021-07-10T22:12:16.5931884-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6\Microsoft.VisualStudio.Threading.exe'
+2021-07-10T22:12:16.5932102-05:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Threading' in folder 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.6'
+2021-07-10T22:12:16.7336714-05:00:Remote executor port received: 32770
+2021-07-10T22:12:16.7339306-05:00:Creating executor TCP client on port 32770
+2021-07-10T22:12:16.7341863-05:00:Created executor TCP client on port 32770
+2021-07-10T22:12:16.7341938-05:00:Connecting to remote executor TCP server
+2021-07-10T22:12:16.7348354-05:00:Connected remote executor TCP server
+2021-07-10T22:12:16.7349579-05:00:trying to connect to Out of Process Executor the 1 attempt
+2021-07-10T22:12:16.7349691-05:00:Connection to Out of Process Executor established in the 1 attempt
+2021-07-10T22:12:16.8594374-05:00:2021-07-10T22:12:16.8584813-05:00:OutOfProcessTestAssemblyExecutor: initialized for C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LibraryTests.dll on test thread #0
+2021-07-10T22:12:16.8630273-05:00:Endpoint 44924 started
+2021-07-10T22:12:16.8758943-05:00:2021-07-10T22:12:16.8755048-05:00:OutOfProcessTestAssemblyExecutor: running tests...
+2021-07-10T22:12:16.9488008-05:00:2021-07-10T22:12:16.9483737-05:00:Assembly resolving TechTalk.SpecFlow, Version=3.9.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41
+2021-07-10T22:12:16.9515262-05:00:2021-07-10T22:12:16.9510863-05:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecFlow' from .deps.json file
+2021-07-10T22:12:16.9535808-05:00:2021-07-10T22:12:16.9532248-05:00:[AssemblyCache] Resolved 'TechTalk.SpecFlow' to 'C:\Users\OGARCIA\.nuget\packages\specflow\3.9.8\lib\netstandard2.0\TechTalk.SpecFlow.dll'
+2021-07-10T22:12:16.9667107-05:00:2021-07-10T22:12:16.9662921-05:00:Assembly resolving SpecFlow.Internal.Json, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41
+2021-07-10T22:12:16.9671850-05:00:2021-07-10T22:12:16.9669909-05:00:[AssemblyCache] Trying to resolve 'SpecFlow.Internal.Json' from .deps.json file
+2021-07-10T22:12:16.9677741-05:00:2021-07-10T22:12:16.9675540-05:00:[AssemblyCache] Resolved 'SpecFlow.Internal.Json' to 'C:\Users\OGARCIA\.nuget\packages\specflow.internal.json\1.0.8\lib\netstandard2.0\SpecFlow.Internal.Json.dll'
+2021-07-10T22:12:16.9888734-05:00:2021-07-10T22:12:16.9884110-05:00:Thread#0:T:-> Loading plugin C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LibraryTests.dll
+2021-07-10T22:12:16.9896473-05:00:2021-07-10T22:12:16.9894533-05:00:Assembly resolving Microsoft.Extensions.DependencyModel, Version=1.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2021-07-10T22:12:16.9900104-05:00:2021-07-10T22:12:16.9898589-05:00:[AssemblyCache] Trying to resolve 'Microsoft.Extensions.DependencyModel' from .deps.json file
+2021-07-10T22:12:16.9904852-05:00:2021-07-10T22:12:16.9902965-05:00:[AssemblyCache] Resolved 'Microsoft.Extensions.DependencyModel' to 'C:\Users\OGARCIA\.nuget\packages\microsoft.extensions.dependencymodel\1.0.3\lib\netstandard1.6\Microsoft.Extensions.DependencyModel.dll'
+2021-07-10T22:12:17.0167431-05:00:2021-07-10T22:12:17.0163491-05:00:Assembly resolving Microsoft.DotNet.PlatformAbstractions, Version=1.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2021-07-10T22:12:17.0172154-05:00:2021-07-10T22:12:17.0169862-05:00:[AssemblyCache] Trying to resolve 'Microsoft.DotNet.PlatformAbstractions' from .deps.json file
+2021-07-10T22:12:17.0177997-05:00:2021-07-10T22:12:17.0175525-05:00:[AssemblyCache] Resolved 'Microsoft.DotNet.PlatformAbstractions' to 'C:\Users\OGARCIA\.nuget\packages\microsoft.dotnet.platformabstractions\1.0.3\lib\netstandard1.3\Microsoft.DotNet.PlatformAbstractions.dll'
+2021-07-10T22:12:17.0231604-05:00:2021-07-10T22:12:17.0227810-05:00:Thread#0:T:-> Missing [assembly:RuntimePlugin] attribute in LibraryTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null. Please check https://go.specflow.org/doc-plugins for details.
+2021-07-10T22:12:17.0237316-05:00:2021-07-10T22:12:17.0234678-05:00:Thread#0:T:-> Loading plugin C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LivingDoc.SpecFlowPlugin.dll
+2021-07-10T22:12:17.0601446-05:00:2021-07-10T22:12:17.0596964-05:00:Assembly resolving LivingDoc.Dtos, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+2021-07-10T22:12:17.0607051-05:00:2021-07-10T22:12:17.0604320-05:00:[AssemblyCache] Trying to resolve 'LivingDoc.Dtos' from .deps.json file
+2021-07-10T22:12:17.0614589-05:00:2021-07-10T22:12:17.0611415-05:00:[AssemblyCache] Resolved 'LivingDoc.Dtos' to 'C:\Users\OGARCIA\.nuget\packages\specflow.plus.livingdocplugin\3.9.5\lib\netstandard2.0\LivingDoc.Dtos.dll'
+2021-07-10T22:12:17.0636806-05:00:2021-07-10T22:12:17.0632929-05:00:Thread#0:T:-> Loading plugin C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\SpecRun.Runtime.SpecFlowPlugin.dll
+2021-07-10T22:12:17.1039577-05:00:2021-07-10T22:12:17.1035357-05:00:Thread#0:T:-> Using specflow.json
+2021-07-10T22:12:17.1105188-05:00:2021-07-10T22:12:17.1101661-05:00:Assembly resolving Cucumber.Messages, Version=6.0.1.0, Culture=neutral, PublicKeyToken=b10c5988214f940c
+2021-07-10T22:12:17.1109555-05:00:2021-07-10T22:12:17.1107714-05:00:[AssemblyCache] Trying to resolve 'Cucumber.Messages' from .deps.json file
+2021-07-10T22:12:17.1115608-05:00:2021-07-10T22:12:17.1112899-05:00:[AssemblyCache] Resolved 'Cucumber.Messages' to 'C:\Users\OGARCIA\.nuget\packages\cucumber.messages\6.0.1\lib\netstandard2.0\Cucumber.Messages.dll'
+2021-07-10T22:12:17.1128788-05:00:2021-07-10T22:12:17.1126152-05:00:Assembly resolving Google.Protobuf, Version=3.7.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604
+2021-07-10T22:12:17.1132926-05:00:2021-07-10T22:12:17.1130853-05:00:[AssemblyCache] Trying to resolve 'Google.Protobuf' from .deps.json file
+2021-07-10T22:12:17.1137895-05:00:2021-07-10T22:12:17.1135976-05:00:[AssemblyCache] Resolved 'Google.Protobuf' to 'C:\Users\OGARCIA\.nuget\packages\google.protobuf\3.7.0\lib\netstandard1.0\Google.Protobuf.dll'
+2021-07-10T22:12:17.1180100-05:00:2021-07-10T22:12:17.1176529-05:00:Assembly resolving Microsoft.VisualStudio.TestPlatform.ObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-07-10T22:12:17.1185477-05:00:2021-07-10T22:12:17.1182995-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.TestPlatform.ObjectModel' from .deps.json file
+2021-07-10T22:12:17.1191431-05:00:2021-07-10T22:12:17.1189422-05:00:[AssemblyCache] Resolved 'Microsoft.VisualStudio.TestPlatform.ObjectModel' to 'C:\Users\OGARCIA\.nuget\packages\microsoft.testplatform.objectmodel\16.7.1\lib\netstandard2.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll'
+2021-07-10T22:12:17.1220942-05:00:2021-07-10T22:12:17.1217861-05:00:Assembly resolving Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-07-10T22:12:17.1225420-05:00:2021-07-10T22:12:17.1223058-05:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.TestPlatform.TestFramework' from .deps.json file
+2021-07-10T22:12:17.1231971-05:00:2021-07-10T22:12:17.1229413-05:00:[AssemblyCache] Resolved 'Microsoft.VisualStudio.TestPlatform.TestFramework' to 'C:\Users\OGARCIA\.nuget\packages\mstest.testframework\2.1.2\lib\netstandard1.0\Microsoft.VisualStudio.TestPlatform.TestFramework.dll'
+2021-07-10T22:12:17.1938331-05:00:Thread#0: Test #4/0 is started on thread #0
+2021-07-10T22:12:17.1976601-05:00:2021-07-10T22:12:17.1973547-05:00:Assembly resolving Gherkin, Version=19.0.3.0, Culture=neutral, PublicKeyToken=86496cfa5b4a5851
+2021-07-10T22:12:17.1981556-05:00:2021-07-10T22:12:17.1979119-05:00:[AssemblyCache] Trying to resolve 'Gherkin' from .deps.json file
+2021-07-10T22:12:17.1987391-05:00:2021-07-10T22:12:17.1984865-05:00:[AssemblyCache] Resolved 'Gherkin' to 'C:\Users\OGARCIA\.nuget\packages\gherkin\19.0.3\lib\netstandard2.0\Gherkin.dll'
+2021-07-10T22:12:17.2245817-05:00:2021-07-10T22:12:17.2242018-05:00:Thread#0:B:Given a first number 1
+2021-07-10T22:12:17.2393264-05:00:2021-07-10T22:12:17.2389000-05:00:Thread#0:T:done: CalculatorSteps.GivenAFirstNumber(1) (0.0s)
+2021-07-10T22:12:17.2407604-05:00:2021-07-10T22:12:17.2404948-05:00:Thread#0:B:And a second number 2
+2021-07-10T22:12:17.2431858-05:00:2021-07-10T22:12:17.2429285-05:00:Thread#0:T:done: CalculatorSteps.GivenASecondNumber(2) (0.0s)
+2021-07-10T22:12:17.2438072-05:00:2021-07-10T22:12:17.2435634-05:00:Thread#0:B:When two numbers are added
+2021-07-10T22:12:17.2500154-05:00:2021-07-10T22:12:17.2496450-05:00:Assembly resolving LipraryApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2021-07-10T22:12:17.2504622-05:00:2021-07-10T22:12:17.2502217-05:00:[AssemblyCache] Trying to resolve 'LipraryApi' from .deps.json file
+2021-07-10T22:12:17.2513566-05:00:2021-07-10T22:12:17.2511216-05:00:[DependencyContextAssemblyCache.ResolveManagedAssembly] Resolving 'LipraryApi', found in dependency map, but unable to resolve a path in ['LipraryApi.dll']
+2021-07-10T22:12:17.2517720-05:00:2021-07-10T22:12:17.2515296-05:00:[AssemblyCache] Could not resolve 'LipraryApi' from .deps.json
+2021-07-10T22:12:17.2530075-05:00:2021-07-10T22:12:17.2527634-05:00:[AssemblyCache] Trying to resolve 'LipraryApi' in folder 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0'
+2021-07-10T22:12:17.2557626-05:00:2021-07-10T22:12:17.2555138-05:00:[AssemblyCache] Trying to resolve 'LipraryApi' to 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LipraryApi.dll'
+2021-07-10T22:12:17.2562304-05:00:2021-07-10T22:12:17.2560180-05:00:[AssemblyCache] Found file 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LipraryApi.dll' for assembly 'LipraryApi'
+2021-07-10T22:12:17.2568809-05:00:2021-07-10T22:12:17.2566958-05:00:[AssemblyCache] Resolved 'LipraryApi' to C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\bin\Debug\net5.0\LipraryApi.dll
+2021-07-10T22:12:17.2577538-05:00:2021-07-10T22:12:17.2575380-05:00:Thread#0:T:done: CalculatorSteps.WhenTwoNumberOperation("added") (0.0s)
+2021-07-10T22:12:17.2583396-05:00:2021-07-10T22:12:17.2581389-05:00:Thread#0:B:Then the result must be 3
+2021-07-10T22:12:17.2607006-05:00:2021-07-10T22:12:17.2604747-05:00:Thread#0:T:done: CalculatorSteps.TheResultMustBe(3) (0.0s)
+2021-07-10T22:12:17.2673224-05:00:Thread#0:Scheduler: get next test for thread 0
+2021-07-10T22:12:17.2673663-05:00:Thread#:Scheduler: testitem #5 from normal test queue 
+2021-07-10T22:12:17.2673685-05:00:Thread#0:Scheduler: considering testitem #5 for thread 0
+2021-07-10T22:12:17.2674217-05:00:Thread#0:TestItem#5:testItemMatchesCurrentTestThread:UnSpecific
+2021-07-10T22:12:17.2674243-05:00:Thread#0:TestItem#5:runsOnOneOtherThreadSpecific:False
+2021-07-10T22:12:17.2674252-05:00:Thread#0:TestItem#5:runsOnOneOtherThreadUnspecific:False
+2021-07-10T22:12:17.2674264-05:00:Thread#0:Scheduler: using testitem #5 for thread 0
+2021-07-10T22:12:17.2674446-05:00:Thread#0:Scheduler: Test #5 is scheduled for thread
+2021-07-10T22:12:17.2674536-05:00:Thread#0:Scheduler: with testItemExecutionIndex 0
+2021-07-10T22:12:17.2986845-05:00:Thread#0: Test #4/0 is finished on thread #0 as Succeeded within 0.1043186 seconds
+2021-07-10T22:12:17.3004655-05:00:Thread#0: Test #5/0 is started on thread #0
+2021-07-10T22:12:17.3016639-05:00:2021-07-10T22:12:17.3014091-05:00:Thread#0:B:Given a first number 1
+2021-07-10T22:12:17.3033947-05:00:2021-07-10T22:12:17.3031005-05:00:Thread#0:T:done: CalculatorSteps.GivenAFirstNumber(1) (0.0s)
+2021-07-10T22:12:17.3038288-05:00:2021-07-10T22:12:17.3036276-05:00:Thread#0:B:And a second number 1
+2021-07-10T22:12:17.3053920-05:00:2021-07-10T22:12:17.3051740-05:00:Thread#0:T:done: CalculatorSteps.GivenASecondNumber(1) (0.0s)
+2021-07-10T22:12:17.3071474-05:00:2021-07-10T22:12:17.3069528-05:00:Thread#0:B:When two numbers are mutiplied
+2021-07-10T22:12:17.3088577-05:00:2021-07-10T22:12:17.3085576-05:00:Thread#0:T:done: CalculatorSteps.WhenTwoNumberOperation("mutiplied") (0.0s)
+2021-07-10T22:12:17.3097537-05:00:2021-07-10T22:12:17.3095127-05:00:Thread#0:B:Then the result must be 1
+2021-07-10T22:12:17.3116708-05:00:2021-07-10T22:12:17.3113570-05:00:Thread#0:T:done: CalculatorSteps.TheResultMustBe(1) (0.0s)
+2021-07-10T22:12:17.3125244-05:00:Thread#0:Scheduler: get next test for thread 0
+2021-07-10T22:12:17.3125355-05:00:Thread#:Scheduler: at the end of normal test queue
+2021-07-10T22:12:17.3125369-05:00:Thread#0:Scheduler: enumerator for thread is at end
+2021-07-10T22:12:17.3125384-05:00:Thread#0:Scheduler: No more tests for thread
+2021-07-10T22:12:17.3144949-05:00:Thread#0: Test #5/0 is finished on thread #0 as Succeeded within 0.013987 seconds
+2021-07-10T22:12:17.3183270-05:00:2021-07-10T22:12:17.3181052-05:00:Got Deinitialize Signal
+2021-07-10T22:12:17.3207126-05:00:RPC Server disconnected, because 'Disposed'. 
+LastMessage: 
+Description:Reached end of stream.
+Exception:<none>
+2021-07-10T22:12:17.3207150-05:00:RPC Client disconnected, because 'Disposed'. 
+LastMessage: 
+Description:Stream has been disposed
+Exception:<none>
+2021-07-10T22:12:17.3214518-05:00:RPC Server disconnected, because 'Disposed'. 
+LastMessage: 
+Description:Reached end of stream.
+Exception:<none>
+2021-07-10T22:12:17.3270084-05:00:Thread#-1:Scheduler: get next test for thread -1
+2021-07-10T22:12:17.3270294-05:00:Thread#:Scheduler: at the end of normal test queue
+2021-07-10T22:12:17.3270327-05:00:Thread#-1:Scheduler: enumerator for thread is at end
+2021-07-10T22:12:17.3283219-05:00;Thread#18;Info;test run finished
+2021-07-10T22:12:17.3284573-05:00;Thread#18;Info;publishing test results
+2021-07-10T22:12:17.3285433-05:00;Thread#18;Info;Not publishing results.
+2021-07-10T22:12:17.3285853-05:00;Thread#18;Info;test results published
+2021-07-10T22:12:17.3286236-05:00;Thread#18;Info;generating reports
+2021-07-10T22:12:17.3801863-05:00;Thread#18;Info;Starting external report generation process
+2021-07-10T22:12:18.3685914-05:00;Thread#18;Info;Successfully generated reports.
+2021-07-10T22:12:18.3697883-05:00;Thread#18;Info;Successfully generated reports
+2021-07-10T22:12:18.3747552-05:00:Total: 2
+2021-07-10T22:12:18.3761569-05:00:Succeeded: 2
+2021-07-10T22:12:18.3763598-05:00:Ignored: 0
+2021-07-10T22:12:18.3765043-05:00:Pending: 0
+2021-07-10T22:12:18.3765095-05:00:Skipped: 0
+2021-07-10T22:12:18.3766344-05:00:Failed: 0
+2021-07-10T22:12:18.3824644-05:00;VSTestExecutionThread;Info;Adding attachments to VSTest
+2021-07-10T22:12:18.3826261-05:00;VSTestExecutionThread;Info;adding Test Execution Report 'C:\Repositorios\Cursomicro2021NET\BDD\LibraryTests\TestResults\Unnamed project__2021-07-10T221215.html'
+========== End of log file ==========
