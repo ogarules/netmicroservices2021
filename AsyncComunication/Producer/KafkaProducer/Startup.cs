@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Confluent.Kafka;
+using KafkaProducer.Models;
+using KafkaProducer.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -11,11 +14,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using Microsoft.EntityFrameworkCore;
-using Serices.Data;
-using Serices;
 
-namespace Greetings
+namespace KafkaProducer
 {
     public class Startup
     {
@@ -29,19 +29,18 @@ namespace Greetings
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
-
-            services.AddDbContext<UnitOfWork>(r => r.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), sqlServerOptionsAction: sqlOptions =>
+            services.AddSingleton<ProducerConfig>(new ProducerConfig
             {
-                sqlOptions.EnableRetryOnFailure(maxRetryCount: 3, maxRetryDelay: TimeSpan.FromSeconds(5), errorNumbersToAdd: null);
-                sqlOptions.MigrationsAssembly("Greetings");
-            }));
+                BootstrapServers = this.Configuration.GetValue<string>("kafkaHost"),
+                ClientId = this.Configuration.GetValue<string>("clientId")
+            });
+            
+            services.AddScoped<KafkaProducerService<int, Greeting>>();
 
-            services.AddScoped<ILibraryService, LibraryService>();
-
+            services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Greetings", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "KafkaProducer", Version = "v1" });
             });
         }
 
@@ -52,10 +51,10 @@ namespace Greetings
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Greetings v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "KafkaProducer v1"));
             }
 
-        //    app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
 
             app.UseRouting();
 

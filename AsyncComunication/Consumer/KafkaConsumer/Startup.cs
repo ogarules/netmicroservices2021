@@ -11,11 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using Microsoft.EntityFrameworkCore;
-using Serices.Data;
-using Serices;
 
-namespace Greetings
+namespace KafkaConsumer
 {
     public class Startup
     {
@@ -29,19 +26,11 @@ namespace Greetings
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddControllers();
-
-            services.AddDbContext<UnitOfWork>(r => r.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), sqlServerOptionsAction: sqlOptions =>
-            {
-                sqlOptions.EnableRetryOnFailure(maxRetryCount: 3, maxRetryDelay: TimeSpan.FromSeconds(5), errorNumbersToAdd: null);
-                sqlOptions.MigrationsAssembly("Greetings");
-            }));
-
-            services.AddScoped<ILibraryService, LibraryService>();
-
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Greetings", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "KafkaConsumer", Version = "v1" });
             });
         }
 
@@ -52,10 +41,10 @@ namespace Greetings
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Greetings v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "KafkaConsumer v1"));
             }
 
-        //    app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
 
             app.UseRouting();
 

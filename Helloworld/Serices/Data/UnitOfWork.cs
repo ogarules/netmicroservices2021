@@ -19,6 +19,7 @@ namespace Serices.Data
             {
                 r.ToTable("Authors");
                 r.HasKey(s => s.Id);
+                
             });
 
             modelBuilder.Entity<Book>(r =>

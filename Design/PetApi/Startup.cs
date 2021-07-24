@@ -1,5 +1,5 @@
-using System.Reflection;
 using System.ComponentModel;
+using System.Reflection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,11 +13,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using Microsoft.EntityFrameworkCore;
-using LibraryApi.Data;
-using LibraryApi.Services;
 
-namespace LipraryApi
+namespace PetApi
 {
     public class Startup
     {
@@ -35,48 +32,45 @@ namespace LipraryApi
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo
-                {
-                    Title = "Library Microservice",
+                c.SwaggerDoc("v1", new OpenApiInfo 
+                { 
+                    Title = "Pet Shop Api", 
                     Version = "v1",
-                    Description = "API for managin the library",
-                    TermsOfService = new Uri("https://bing.com"),
                     Contact = new OpenApiContact
                     {
-                        Name = "El oga",
-                        Email = "oscargl2017@hotmail.com"
+                       Email = "oscargl2017@hotmail.com",
+                       Name = "El oga",
+                       Url = new Uri("https://bing.com")
                     },
+                    Description = "Api for managing the pet shop",
                     License = new OpenApiLicense
                     {
-                        Name = "MIT",
+                        Name = "MIT Licence",
                         Url = new Uri("https://bing.com")
-                    }
+                    },
+                    TermsOfService = new Uri("https://bing.com")
                 });
 
-                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                var xmlPath = System.IO.Path.Combine(AppContext.BaseDirectory, xmlFile);
-                c.IncludeXmlComments(xmlPath);
+                var xmlDocsFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlDocsPath = System.IO.Path.Combine(AppContext.BaseDirectory, xmlDocsFile);
+
+                c.IncludeXmlComments(xmlDocsPath);
             });
-
-            services.AddDbContext<LibraryDataContext>(r => r.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString"), sqlServerOptionsAction: sqlOptions =>
-            {
-                sqlOptions.EnableRetryOnFailure(maxRetryCount: 3, maxRetryDelay: TimeSpan.FromSeconds(5), errorNumbersToAdd: null);
-
-            }));
-
-            services.AddScoped<ILibraryService, LibraryService>();
-            services.AddScoped<IBotService, BotService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
+            //if (env.IsDevelopment())
+            //{
                 app.UseDeveloperExceptionPage();
+
+            if (this.Configuration.GetValue<bool>("enableDocs"))
+            {
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "LipraryApi v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "PetApi v1"));
             }
+            //}
 
             app.UseHttpsRedirection();
 
