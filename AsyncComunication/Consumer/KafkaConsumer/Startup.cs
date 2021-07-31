@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Confluent.Kafka;
+using KafkaConsumer.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,12 +28,24 @@ namespace KafkaConsumer
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var consumerConfig = new ConsumerConfig
+            {
+                BootstrapServers = this.Configuration.GetValue<string>("kafkaHost"),
+                ClientId = this.Configuration.GetValue<string>("clientId"),
+                GroupId = "GreetingConsumerService",
+                AutoOffsetReset = AutoOffsetReset.Latest
+            };
+
+            services.AddSingleton<ConsumerConfig>(consumerConfig);
+            services.AddHostedService<GreetingsConsumer>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "KafkaConsumer", Version = "v1" });
             });
+
+            //services.AddScoped<MyAbstractBase, ExecuteOperationByApi>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
