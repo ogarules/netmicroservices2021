@@ -1,0 +1,47 @@
+<div>
+    <form #dataForm="ngForm" novalidate>
+        <div>
+            <mat-form-field>
+                <mat-label>Nombre</mat-label>
+                <input matInput type="text" [(ngModel)]="item.name" #departmentName="ngModel" name="departmentName" maxlength="200" required>
+                <mat-error *ngIf="departmentName.errors?.required">*Campo requerido</mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Apellido Paterno</mat-label>
+                <input matInput type="text" [(ngModel)]="item.lastName" #lastName="ngModel" name="lastName" maxlength="200" required>
+                <mat-error *ngIf="lastName.errors?.required">*Campo requerido</mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Apellido Materno</mat-label>
+                <input matInput type="text" [(ngModel)]="item.familyName" #familyName="ngModel" name="familyName" maxlength="200" required>
+                <mat-error *ngIf="familyName.errors?.required">*Campo requerido</mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Fecha de nacimiento</mat-label>
+                <input matInput [(ngModel)]="item.dob" [matDatepicker]="from" name="from" placeholder="From">
+
+                <mat-datepicker-toggle matSuffix [for]="from"></mat-datepicker-toggle>
+                <mat-datepicker #from></mat-datepicker>
+            </mat-form-field>
+
+            <div>
+                <mat-form-field fxFlex class="full-width">
+                    <mat-label>Departamento</mat-label>
+                    <mat-select [(ngModel)]="item.departmentId" name="departmentId" #departmentId id="departmentId" required>
+                        <mat-option *ngFor="let u of departments" [value]="u.id">
+                            {{ u.name }}
+                        </mat-option>
+                    </mat-select>
+                    <mat-error *ngIf="departmentId.errors?.required">*Campo requerido</mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div>
+            <button mat-raised-button (click)="save()" [disabled]="!dataForm.valid">Guardar</button>
+        </div>
+    </form>
+</div>

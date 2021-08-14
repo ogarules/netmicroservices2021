@@ -1,0 +1,24 @@
+<div>
+    <button mat-raised-button routerLink="/departments/{{id}}/employees/0">Agregar Empleado</button>
+</div>
+
+<div>
+    <mat-table [dataSource]="dataSource">
+        <ng-container matColumnDef="name">
+            <mat-header-cell *matHeaderCellDef>Empleado</mat-header-cell>
+            <mat-cell *matCellDef="let item">{{item.name}} {{item.lastName}} {{item.familyName}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="actions">
+            <mat-header-cell *matHeaderCellDef>Acciones</mat-header-cell>
+            <mat-cell *matCellDef="let item">
+                <button mat-icon-button color="warn" routerLink="/departments/{{id}}/employees/{{item.id}}">
+                    <mat-icon>edit</mat-icon>
+                </button>
+            </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="['name','actions']"></mat-header-row>
+        <mat-row *matRowDef="let row; columns:['name','actions']"></mat-row>
+    </mat-table>
+    <mat-paginator [length]="dataSource?.totalRecords" [pageSize]="10" [pageSizeOptions]="[10,15,20]"></mat-paginator>
+</div>

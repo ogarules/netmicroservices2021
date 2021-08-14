@@ -1,0 +1,73 @@
+{
+    "Routes": [{
+            "DownstreamPathTemplate": "/department",
+            "DownstreamScheme": "http",
+            "UseServiceDiscovery": true,
+            "UpstreamPathTemplate": "/api/v1/department",
+            "UpstreamHttpMethod": ["Get", "Post", "Put", "Delete", "Options", "Patch"],
+            "ServiceName": "department",
+            "LoadBalancerOptions": {
+                "Type": "LeastConnection"
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/department/{any}",
+            "DownstreamScheme": "http",
+            "UseServiceDiscovery": true,
+            "UpstreamPathTemplate": "/api/v1/department/{any}",
+            "UpstreamHttpMethod": ["Get", "Post", "Put", "Delete", "Options", "Patch"],
+            "ServiceName": "department",
+            "LoadBalancerOptions": {
+                "Type": "LeastConnection"
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/employee",
+            "DownstreamSchema": "http",
+            "UseServiceDiscovery": true,
+            "UpstreamPathTemplate": "/api/v1/employee",
+            "UpstreamHttpMethod": ["Get", "Post", "Put", "Delete", "Options", "Patch"],
+            "ServiceName": "employee",
+            "LoadBalancerOptions": {
+                "Type": "LeastConnection"
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/employee{any}",
+            "DownstreamSchema": "http",
+            "UseServiceDiscovery": true,
+            "UpstreamPathTemplate": "/api/v1/employee{any}",
+            "UpstreamHttpMethod": ["Get", "Post", "Put", "Delete", "Options", "Patch"],
+            "ServiceName": "employee",
+            "LoadBalancerOptions": {
+                "Type": "LeastConnection"
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/{any}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [{
+                "Host": "${HR_API_HOST}",
+                "Port": 4200
+            }],
+            "UpstreamPathTemplate": "/{any}",
+            "UpstreamHttpMethod": ["Get", "Post"]
+        }
+    ],
+    "GlobalConfiguration": {
+        "ServiceDiscoveryProvider": {
+            "Type": "Eureka"
+        },
+        "DownstreamScheme": "http",
+        "LoadBalancerOptions": {
+            "Type": "LeastConnection"
+        },
+        "HttpHandlerOptions": {
+            "AllowAutoRedirect": true,
+            "UseTracing": true
+        }
+    },
+    "ServiceDiscoveryProvider": {
+        "Type": "Eureka"
+    }
+}
