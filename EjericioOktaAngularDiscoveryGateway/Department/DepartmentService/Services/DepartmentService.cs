@@ -28,6 +28,7 @@ namespace DepartmentService.Services
             }
 
             entity.Name = data.Name;
+            entity.OrganizationId = data.OrganizationId;
 
             await this.context.SaveChangesAsync();
 
@@ -64,6 +65,19 @@ namespace DepartmentService.Services
                 department.Id,
                 department.Name,
                 Employees = this.employeeService.GetEmployeesFromDepartment(id).Result
+            };
+        }
+
+        public async Task<object> GetOrganizationDepartments(int page, int pageSize, int id)
+        {
+            var departments = this.context.Department.Where(r => r.OrganizationId == id);
+            var total = await departments.CountAsync();
+            var data = await departments.Skip(page * pageSize).Take(pageSize).ToListAsync();
+
+            return new
+            {
+                total = total,
+                data = departments
             };
         }
     }

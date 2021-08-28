@@ -10,7 +10,7 @@ using Steeltoe.Management.Endpoint;
 using OpenTelemetry.Logs;
 using Steeltoe.Extensions.Configuration.Placeholder;
 
-namespace EmployeeService
+namespace Organization
 {
     public class Program
     {
@@ -19,9 +19,9 @@ namespace EmployeeService
             CreateHostBuilder(args).Build().Run();
         }
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
+               public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                         .ConfigureAppConfiguration((builderContext, config) =>
+            .ConfigureAppConfiguration((builderContext, config) =>
             {
                 config.SetBasePath(builderContext.HostingEnvironment.ContentRootPath)
                     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
@@ -47,7 +47,7 @@ namespace EmployeeService
                 .AddPlaceholderResolver()
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();//.UseUrls("http://*:5002");
+                    webBuilder.UseStartup<Startup>();//.UseUrls("http://*:5000");
                 });
     }
 }

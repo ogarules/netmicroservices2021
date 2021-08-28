@@ -1,0 +1,76 @@
+version: '3.4'
+
+services: 
+  hreureka:
+    image: steeltoeoss/eureka-server
+    ports:
+      - 8761:8761
+  hrfront:
+    depends_on: 
+      - hreureka
+    image: containersoga/hrfront
+    #container_name: hrfrontoga
+    build: 
+      context: ./Front/HRFront
+      dockerfile: Dockerfile
+    environment: 
+      NODE_ENV: production
+      HRhostApi: http://localhost:5007/api/v1
+      HRoktaIssuer: 'https://dev-909112.okta.com/oauth2/default'
+      HRoktaClient: '0oabeulwbvH5k3fPH357'
+    ports: 
+      - 4200:80
+  hrdepartment:
+    depends_on: 
+      - hreureka
+    image: containersoga/hrdepartment
+    build: 
+      context: Department
+      dockerfile: Dockerfile
+    environment: 
+      HR_EUREKA: "http://192.168.0.152:8761/eureka"
+      HR_API_HOST: "192.168.0.152"
+      HR_BD_CON: "Server=192.168.0.152,9999;Initial Catalog=MyDB;User ID=sa;Password=Certum#01;TrustServerCertificate=true;"
+      HR_OKTA_AUTHORITY: "https://dev-909112.okta.com/oauth2/default"
+      HR_OKTA_AUDIENCE: "api://default"
+    ports: 
+      - 5000:80
+  hremployee:
+    depends_on: 
+      - hreureka
+    image: containersoga/hremployee
+    build: 
+      context: Employee
+      dockerfile: Dockerfile
+    environment: 
+      HR_EUREKA: "http://192.168.0.152:8761/eureka"
+      HR_API_HOST: "192.168.0.152"
+      HR_BD_CON: "Server=192.168.0.152,9999;Initial Catalog=MyDB;User ID=sa;Password=Certum#01;TrustServerCertificate=true;"
+      HR_OKTA_AUTHORITY: "https://dev-909112.okta.com/oauth2/default"
+      HR_OKTA_AUDIENCE: "api://default"
+    ports: 
+      - 5002:80
+  hrgateway:
+    depends_on: 
+      - hreureka
+      - hremployee
+      - hrdepartment
+      - hrfront
+    image: containersoga/hrgateway
+    build: 
+      context: Gateway
+      dockerfile: Dockerfile
+    environment: 
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      HR_EUREKA: "http://192.168.0.152:8761/eureka"
+      HR_API_HOST: "192.168.0.152"
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_Kestrel__Certificates__Default__Password: 928e7b56-eafd-49d1-934e-be7432770903
+      ASPNETCORE_Kestrel__Certificates__Default__Path: /root/.aspnet/https/Axity.AgentHub.Api.pfx
+    volumes: 
+      - ${APPDATA}/Microsoft/UserSecrets/:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      #- ${USERPROFILE}/.aspnet/Https:/root/.aspnet/https:ro
+    ports: 
+      - 5007:80
+      - 5008:443

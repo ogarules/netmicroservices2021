@@ -21,9 +21,9 @@
             },
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development",
-                "HR_EUREKA": "http://192.168.1.150:8761/eureka",
-                "HR_API_HOST": "192.168.1.150",
-                "HR_BD_CON": "Server=192.168.1.150,9999;Initial Catalog=MyDB;User ID=sa;Password=Certum#01;TrustServerCertificate=true;",
+                "HR_EUREKA": "http://192.168.1.89:8761/eureka",
+                "HR_API_HOST": "192.168.1.89",
+                "HR_BD_CON": "Server=192.168.1.89,9999;Initial Catalog=MyDB;User ID=sa;Password=Certum#01;TrustServerCertificate=true;",
                 "HR_OKTA_AUTHORITY": "https://dev-909112.okta.com/oauth2/default",
                 "HR_OKTA_AUDIENCE":"api://default"
             },

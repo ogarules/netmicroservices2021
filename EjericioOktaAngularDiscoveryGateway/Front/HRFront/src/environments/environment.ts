@@ -4,9 +4,9 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:5007/api/v1',
-  oktaIssuer: 'https://dev-909112.okta.com/oauth2/default',
-  oktaClientId: '0oabeulwbvH5k3fPH357'
+  apiUrl: window["env"]["_HR_hostApi"],
+  oktaIssuer: window["env"]["_HR_oktaIssuer"],
+  oktaClientId: window["env"]["_HR_oktaClient"]
 };
 
 /*

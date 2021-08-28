@@ -48,5 +48,11 @@ namespace DepartmentService.Controllers
         {
             return await this.service.GetDepartmentEmployees(id);
         }
+
+        [HttpGet("organization/{id}")]
+        public async Task<object> GetOrganizationDepartments(int id, [FromQuery(Name = "page")] int page, [FromQuery(Name = "pagesize")] int pageSize = 10)
+        {
+            return await this.service.GetOrganizationDepartments(page, pageSize, id);
+        }
     } 
 }

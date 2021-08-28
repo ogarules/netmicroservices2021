@@ -30,7 +30,7 @@ namespace Gateway
                 .AddPlaceholderResolver()
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>().UseUrls("http://*:5007","https://*:5008");
+                    webBuilder.UseStartup<Startup>();//.UseUrls("http://*:5007","https://*:5008");
                 });
     }
 }
