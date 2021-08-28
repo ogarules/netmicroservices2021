@@ -20,6 +20,21 @@ services:
       HRoktaClient: '0oabeulwbvH5k3fPH357'
     ports: 
       - 4200:80
+  hrorganization:
+    depends_on: 
+      - hreureka
+    image: containersoga/hrorganization
+    build: 
+      context: Organization
+      dockerfile: Dockerfile
+    environment: 
+      HR_EUREKA: "http://192.168.1.89:8761/eureka"
+      HR_API_HOST: "192.168.1.89"
+      HR_BD_CON: "Server=192.168.1.89,9999;Initial Catalog=MyDB;User ID=sa;Password=Certum#01;TrustServerCertificate=true;"
+      HR_OKTA_AUTHORITY: "https://dev-909112.okta.com/oauth2/default"
+      HR_OKTA_AUDIENCE: "api://default"
+    ports: 
+      - 5010:80
   hrdepartment:
     depends_on: 
       - hreureka
@@ -28,9 +43,9 @@ services:
       context: Department
       dockerfile: Dockerfile
     environment: 
-      HR_EUREKA: "http://192.168.0.152:8761/eureka"
-      HR_API_HOST: "192.168.0.152"
-      HR_BD_CON: "Server=192.168.0.152,9999;Initial Catalog=MyDB;User ID=sa;Password=Certum#01;TrustServerCertificate=true;"
+      HR_EUREKA: "http://192.168.1.89:8761/eureka"
+      HR_API_HOST: "192.168.1.89"
+      HR_BD_CON: "Server=192.168.1.89,9999;Initial Catalog=MyDB;User ID=sa;Password=Certum#01;TrustServerCertificate=true;"
       HR_OKTA_AUTHORITY: "https://dev-909112.okta.com/oauth2/default"
       HR_OKTA_AUDIENCE: "api://default"
     ports: 
@@ -43,9 +58,9 @@ services:
       context: Employee
       dockerfile: Dockerfile
     environment: 
-      HR_EUREKA: "http://192.168.0.152:8761/eureka"
-      HR_API_HOST: "192.168.0.152"
-      HR_BD_CON: "Server=192.168.0.152,9999;Initial Catalog=MyDB;User ID=sa;Password=Certum#01;TrustServerCertificate=true;"
+      HR_EUREKA: "http://192.168.1.89:8761/eureka"
+      HR_API_HOST: "192.168.1.89"
+      HR_BD_CON: "Server=192.168.1.89,9999;Initial Catalog=MyDB;User ID=sa;Password=Certum#01;TrustServerCertificate=true;"
       HR_OKTA_AUTHORITY: "https://dev-909112.okta.com/oauth2/default"
       HR_OKTA_AUDIENCE: "api://default"
     ports: 
@@ -62,8 +77,8 @@ services:
       dockerfile: Dockerfile
     environment: 
       ASPNETCORE_URLS: https://+:443;http://+:80
-      HR_EUREKA: "http://192.168.0.152:8761/eureka"
-      HR_API_HOST: "192.168.0.152"
+      HR_EUREKA: "http://192.168.1.89:8761/eureka"
+      HR_API_HOST: "192.168.1.89"
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_Kestrel__Certificates__Default__Password: 928e7b56-eafd-49d1-934e-be7432770903
       ASPNETCORE_Kestrel__Certificates__Default__Path: /root/.aspnet/https/Axity.AgentHub.Api.pfx

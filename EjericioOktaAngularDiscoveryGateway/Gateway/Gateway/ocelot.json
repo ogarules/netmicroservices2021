@@ -1,5 +1,27 @@
 {
     "Routes": [{
+            "DownstreamPathTemplate": "/organization",
+            "DownstreamScheme": "http",
+            "UseServiceDiscovery": true,
+            "UpstreamPathTemplate": "/api/v1/organization",
+            "UpstreamHttpMethod": ["Get", "Post", "Put", "Delete", "Options", "Patch"],
+            "ServiceName": "organization",
+            "LoadBalancerOptions": {
+                "Type": "LeastConnection"
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/organization/{any}",
+            "DownstreamScheme": "http",
+            "UseServiceDiscovery": true,
+            "UpstreamPathTemplate": "/api/v1/organization/{any}",
+            "UpstreamHttpMethod": ["Get", "Post", "Put", "Delete", "Options", "Patch"],
+            "ServiceName": "organization",
+            "LoadBalancerOptions": {
+                "Type": "LeastConnection"
+            }
+        },
+        {
             "DownstreamPathTemplate": "/department",
             "DownstreamScheme": "http",
             "UseServiceDiscovery": true,

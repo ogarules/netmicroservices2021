@@ -10,7 +10,7 @@ namespace Organization.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-   // [Authorize]
+    //[Authorize]
     public class OrganizationController: ControllerBase
     {
         private readonly Organization.Services.OrganizationService service;

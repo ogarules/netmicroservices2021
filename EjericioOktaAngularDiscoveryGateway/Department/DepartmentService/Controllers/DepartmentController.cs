@@ -8,7 +8,7 @@ namespace DepartmentService.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    [Authorize]
+    //[Authorize]
     public class DepartmentController : ControllerBase
     {
         private readonly DepartmentService.Services.DepartmentService service;

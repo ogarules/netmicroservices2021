@@ -71,11 +71,6 @@ services.AddHeaderPropagation(options =>
                 r.BaseAddress = "department".ToServiceName();
             })
             .AddMicroserviceOptions();
-            // .AddServiceDiscovery()
-            // .AddRoundRobinLoadBalancer()
-            // .UseHttpClientMetrics()
-            // .AddTransientHttpErrorPolicy(r => r.RetryAsync(3))
-            // .AddTransientHttpErrorPolicy(r => r.CircuitBreakerAsync(4, TimeSpan.FromSeconds(15)));
 
             services.AddHttpClient<EmployeeService>(r =>
             {
