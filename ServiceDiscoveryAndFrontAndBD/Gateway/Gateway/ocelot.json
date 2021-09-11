@@ -1,0 +1,68 @@
+{
+    "Routes": [{
+        "DownstreamPathTemplate": "/department",
+        "DownstreamScheme": "http",
+        "UseServiceDiscovery": true,
+        "UpstreamPathTemplate": "/api/v1/department",
+        "UpstreamHttpMethod": ["Get", "Post", "Put", "Patch", "Options", "Delete"],
+        "ServiceName": "department",
+        "LoadBalancerOptions": {
+            "Type": "LeastConnection"
+        }
+    }, {
+        "DownstreamPathTemplate": "/department{any}",
+        "DownstreamScheme": "http",
+        "UseServiceDiscovery": true,
+        "UpstreamPathTemplate": "/api/v1/department{any}",
+        "UpstreamHttpMethod": ["Get", "Post", "Put", "Patch", "Options", "Delete"],
+        "ServiceName": "department",
+        "LoadBalancerOptions": {
+            "Type": "LeastConnection"
+        }
+    }, {
+        "DownstreamPathTemplate": "/employee",
+        "DownstreamScheme": "http",
+        "UseServiceDiscovery": true,
+        "UpstreamPathTemplate": "/api/v1/employee",
+        "UpstreamHttpMethod": ["Get", "Post", "Put", "Patch", "Options", "Delete"],
+        "ServiceName": "employee",
+        "LoadBalancerOptions": {
+            "Type": "LeastConnection"
+        }
+    }, {
+        "DownstreamPathTemplate": "/employee/{any}",
+        "DownstreamScheme": "http",
+        "UseServiceDiscovery": true,
+        "UpstreamPathTemplate": "/api/v1/employee/{any}",
+        "UpstreamHttpMethod": ["Get", "Post", "Put", "Patch", "Options", "Delete"],
+        "ServiceName": "employee",
+        "LoadBalancerOptions": {
+            "Type": "LeastConnection"
+        }
+    }, {
+        "DownstreamPathTemplate": "/{everything}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [{
+            "Host": "${HR_API_HOST}",
+            "Port": 4200
+        }],
+        "UpstreamPathTemplate": "/{everything}",
+        "UpstreamHttpMethod": ["Get", "Post"]
+    }],
+    "GlobalConfiguration": {
+        "ServiceDiscoveryProvider": {
+            "Type": "Eureka"
+        },
+        "DownstreamScheme": "https",
+        "LoadBalancerOptions": {
+            "Type": "LeastConnection"
+        },
+        "HttpHandlerOptions": {
+            "AllowAutoRedirect": true,
+            "UseTracing": true
+        }
+    },
+    "ServiceDiscoveryProvider": {
+        "Type": "Eureka"
+    }
+}

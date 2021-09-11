@@ -1,0 +1,44 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (web)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Department/bin/Debug/net5.0/Department.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Department",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "HR_EUREKA": "http://localhost:8761/eureka",
+                "HR_BD_CON": "Server=localhost,9999;Initial Catalog=MyDB;User ID=sa;Password=Certum#01;TrustServerCertificate=true;",
+                "HR_OKTA_AUTHORITY": "https://dev-909112.okta.com/oauth2/default",
+                "HR_OKTA_AUDIENCE": "api://default",
+                "HR_API_HOST": "192.168.0.20"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        },
+        {
+            "name": "Docker .NET Core Launch",
+            "type": "docker",
+            "request": "launch",
+            "preLaunchTask": "docker-run: debug",
+            "netCore": {
+                "appProject": "${workspaceFolder}/Department/Department.csproj"
+            }
+        }
+    ]
+}

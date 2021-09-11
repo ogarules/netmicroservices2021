@@ -10,14 +10,10 @@ using Microsoft.Extensions.Logging;
 namespace KafkaConsumer.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class WeatherForecastController : ControllerBase
     {
         MyAbstractBase executor;
-        public WeatherForecastController()
-        {
-            this.executor = executor;
-        }
         
         private static readonly string[] Summaries = new[]
         {
@@ -30,9 +26,10 @@ namespace KafkaConsumer.Controllers
         {
             _logger = logger;
         }
-
+     
+        // api/weatherforecast
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public IEnumerable<WeatherForecast> GetWeather()
         {
            // var result = this.executor.Calculate(-1, 2);
 

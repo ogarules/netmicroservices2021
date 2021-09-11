@@ -1,0 +1,11 @@
+<div *ngIf="isAuthenticated">
+    <h2>Hi, {{user?.name}}!</h2>
+    <button mat-raised-button color="primary" (click)="oktaAuth.signOut()">Logout</button>
+    <button mat-raised-button color="accent" routerLink="/department">Departamentos</button>
+</div>
+
+<div *ngIf="!isAuthenticated">
+    <button mat-raised-button color="accent" (click)="oktaAuth.signInWithRedirect({ })">Login</button>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,22 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: hrcronjob
+spec:
+  schedule: "*/1 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: hrcronnet
+              image: containersoga/hrcronnet
+              imagePullPolicy: Always
+              volumeMounts:
+              - mountPath: /ogatemp
+                name: data
+          restartPolicy: OnFailure
+          volumes:
+          - name: data
+            persistentVolumeClaim:
+              claimName: cronjob-pvc

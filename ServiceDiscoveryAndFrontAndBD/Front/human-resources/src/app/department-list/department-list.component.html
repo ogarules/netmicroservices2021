@@ -1,0 +1,32 @@
+<div>
+    <button mat-raised-button #myButton style="width: 200px;" routerLink="/department/0">Agregar</button>
+</div>
+
+<div style="width: 100%;">
+    <mat-table [dataSource]="dataSource">
+        <ng-container matColumnDef="name">
+            <mat-header-cell *matHeaderCellDef>Nombre</mat-header-cell>
+            <mat-cell *matCellDef="let item"><a routerLink="/department/{{item.id}}">{{item.name}}</a></mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="actions">
+            <mat-header-cell *matHeaderCellDef style="text-align: left;display: table;">
+                <h2 class="warnFont"></h2>
+            </mat-header-cell>
+            <mat-cell *matCellDef="let item" style="text-align: right; ">
+                <button mat-icon-button color="warn" title="Editar" routerLink="/department/{{item.id}}">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button color="warn" title="Usuarios" routerLink="/department/{{item.id}}/employee">
+                    <mat-icon>account_circle</mat-icon>
+                </button>
+                <button mat-icon-button color="warn" title="Eliminar" (click)="delete(item)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="['name','actions']"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: ['name','actions']"></mat-row>
+    </mat-table>
+    <mat-paginator [length]="dataSource?.totalRecords" [pageSize]="10" [pageSizeOptions]="[10, 15, 20]"></mat-paginator>
+</div>

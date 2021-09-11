@@ -1,0 +1,15 @@
+<div>
+    <form #dataForm="ngForm" novalidate>
+        <div>
+            <mat-form-field>
+                <mat-label>Nombre</mat-label>
+                <input matInput type="text" [(ngModel)]="item.name" #departmentName="ngModel" name="departmentName" maxlength="200" required>
+                <mat-error *ngIf="departmentName.errors?.required">*Campo requerido</mat-error>
+            </mat-form-field>
+        </div>
+
+        <div>
+            <button mat-raised-button (click)="save()" [disabled]="!dataForm.valid">Guardar</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,45 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: gateway-ingress
+  labels:
+    name: gateway-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+spec:
+  #ingressClassName: nginx
+  rules:
+  - http:
+      paths:
+      - pathType: Prefix
+        path: /api/v1/(employee/?.*)
+        backend:
+          service:
+            name: employee
+            port: 
+              number: 5002
+      - pathType: Prefix
+        path: /api/v1/(department/?.*)
+        backend:
+          service:
+            name: department
+            port: 
+              number: 5000
+      - pathType: Prefix
+        path: /api/v1/(organization/?.*)
+        backend:
+          service:
+            name: organization
+            port: 
+              number: 5010
+      - pathType: Prefix
+        path: /?(.*)
+        backend:
+          service:
+            name: front
+            port: 
+              number: 80
+  tls:
+    - hosts:
+        - localhost
+      secretName: localhostcertoga

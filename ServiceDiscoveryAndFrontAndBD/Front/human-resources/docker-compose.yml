@@ -1,0 +1,66 @@
+version: '3.4'
+
+services:
+  hreureka:
+    image: steeltoeoss/eureka-server
+    ports:
+      - 8761:8761
+  hrfront:
+    depends_on: 
+      - hreureka
+    image: containersoga/hrfront
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+      HRoktaIssuer: https://dev-909112.okta.com/oauth2/default
+      HRhostApi: http://192.168.0.20:5006/api/v1
+      HRoktaClient: 0oa9us6wnqjbwkG0X357
+    ports:
+      - 4200:80
+  hrdepartment:
+    depends_on: 
+      - hreureka
+    image: containersoga/hrdepartment
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      HR_API_HOST: 192.168.0.20
+      HR_EUREKA: http://192.168.0.20:8761/eureka
+      HR_BD_CON: Server=6.tcp.ngrok.io,14030;Initial Catalog=MyDB;User ID=sa;Password=Certum#01;TrustServerCertificate=true;
+      HR_OKTA_AUTHORITY: https://dev-909112.okta.com/oauth2/default
+      HR_OKTA_AUDIENCE: api://default
+    ports:
+      - 5000:80
+  hremployee:
+    depends_on: 
+      - hreureka
+    image: containersoga/hremployee
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      HR_API_HOST: 192.168.0.20
+      HR_EUREKA: http://192.168.0.20:8761/eureka
+      HR_BD_CON: Server=6.tcp.ngrok.io,14030;Initial Catalog=MyDB;User ID=sa;Password=Certum#01;TrustServerCertificate=true;
+      HR_OKTA_AUTHORITY: https://dev-909112.okta.com/oauth2/default
+      HR_OKTA_AUDIENCE: api://default
+    ports:
+      - 5002:80      
+  hrgateway:
+    depends_on: 
+      - hreureka
+      - hremployee
+      - hrdepartment
+      - hrfront
+    image: containersoga/hrgateway
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      HR_API_HOST: 192.168.0.20
+      HR_EUREKA: http://192.168.0.20:8761/eureka
+    ports:
+      - 5006:80

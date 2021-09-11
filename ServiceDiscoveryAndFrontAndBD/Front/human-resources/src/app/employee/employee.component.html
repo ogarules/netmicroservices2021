@@ -1,0 +1,57 @@
+<div>
+    <form #userForm="ngForm" novalidate>
+        <div>
+            <div>
+                <mat-form-field fxFlex class="full-width">
+                    <mat-label>Nombre</mat-label>
+                    <input matInput [(ngModel)]="item.name" #adname="ngModel" name="adname" id="adname" maxlength="200" required>
+                    <mat-error *ngIf="adname.errors?.required">*Campo requerido</mat-error>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field fxFlex class="full-width">
+                    <mat-label>Apellido Paterno</mat-label>
+                    <input matInput [(ngModel)]="item.lastName" #lastName="ngModel" name="lastName" id="lastName" maxlength="200" required>
+                    <mat-error *ngIf="lastName.errors?.required">*Campo requerido</mat-error>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field fxFlex class="full-width">
+                    <mat-label>Apellido Materno</mat-label>
+                    <input matInput [(ngModel)]="item.familyName" #familyName="ngModel" name="familyName" id="familyName" maxlength="200" required>
+                    <mat-error *ngIf="familyName.errors?.required">*Campo requerido</mat-error>
+                </mat-form-field>
+            </div>
+            <div>
+                <!-- <mat-form-field class="full-width">
+                    <mat-label>Fecha de nacimiento</mat-label>
+                    <input matInput [(ngModel)]="item.dob" [matDatepicker]="dob" #dob="ngModel" name="dob" id="dob" placeholder="Fecha de nacimiento" style="width: 0px;" readonly>
+                    <mat-datepicker-toggle matSuffix [for]="dob"></mat-datepicker-toggle>
+                    <mat-datepicker #dobPicker>
+                    </mat-datepicker>
+                </mat-form-field> -->
+                <mat-form-field>
+                    <mat-label>Fecha de nacimiento</mat-label>
+                    <input matInput [(ngModel)]="item.dob" [matDatepicker]="from" name="from" placeholder="From">
+
+                    <mat-datepicker-toggle matSuffix [for]="from"></mat-datepicker-toggle>
+                    <mat-datepicker #from></mat-datepicker>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field fxFlex class="full-width">
+                    <mat-label>Departamento</mat-label>
+                    <mat-select [(ngModel)]="item.departmentId" name="departmentId" #departmentId id="departmentId" required>
+                        <mat-option *ngFor="let u of departments" [value]="u.id">
+                            {{ u.name }}
+                        </mat-option>
+                    </mat-select>
+                    <mat-error *ngIf="departmentId.errors?.required">*Campo requerido</mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <div>
+            <button mat-raised-button #myButton style="width: 200px;" (click)="save()" [disabled]="!userForm.valid"><mat-icon style="-webkit-text-fill-color:#412684">save</mat-icon>Guardar cambios</button>
+        </div>
+    </form>
+</div>

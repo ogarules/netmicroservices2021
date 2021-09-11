@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hrconfigs
+data:
+  oktaIssuer: https://dev-909112.okta.com/oauth2/default
+  oktaAudience: api://default
+  ingressGateway: https://localhost/api/v1

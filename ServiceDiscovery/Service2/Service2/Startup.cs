@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
@@ -20,6 +21,9 @@ using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 using Prometheus;
 using Service2.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using System.Net;
+using Polly;
 
 namespace Service2
 {
@@ -52,19 +56,25 @@ namespace Service2
             services.AddHttpClient<ValuesService>(r =>
             {
                 r.BaseAddress = "service1".ToServiceName();
+                r.Timeout = TimeSpan.FromSeconds(30);
             })
             .AddServiceDiscovery()
             .AddRoundRobinLoadBalancer()
-            .UseHttpClientMetrics();
+            .UseHttpClientMetrics()
+            .AddTransientHttpErrorPolicy(r => r.RetryAsync(3))
+            .AddTransientHttpErrorPolicy(r => r.CircuitBreakerAsync(4, TimeSpan.FromSeconds(15)));
 
             services.AddHttpClient("service1", r =>
             {
                 r.BaseAddress = "service1".ToServiceName();
+                r.Timeout = TimeSpan.FromSeconds(30);
             })
             .AddServiceDiscovery()
             .AddRoundRobinLoadBalancer()
             .AddTypedClient(r => Refit.RestService.For<IValuesSerice>(r))
-            .UseHttpClientMetrics();
+            .UseHttpClientMetrics()
+            .AddTransientHttpErrorPolicy(r => r.RetryAsync(3))
+            .AddTransientHttpErrorPolicy(r => r.CircuitBreakerAsync(4, TimeSpan.FromSeconds(15)));
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -72,12 +82,33 @@ namespace Service2
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Service2", Version = "v1" });
             });
 
-            services.AddHealthChecks().ForwardToPrometheus(); 
+            services.AddHealthChecks().ForwardToPrometheus();
+
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                    .AddJwtBearer(options =>
+                    {
+                        options.Authority = "https://dev-909112.okta.com/oauth2/default";
+                        options.Audience = "api://default";
+                    });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            
+            ServicePointManager.ServerCertificateValidationCallback = (a, b, c, d) => true;
+            ServicePointManager.Expect100Continue = true;
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls
+            | SecurityProtocolType.Tls11
+            | SecurityProtocolType.Tls12;
+
+            app.UseCors(r =>
+            {
+                r.AllowAnyOrigin();
+                r.AllowAnyMethod();
+                r.AllowAnyHeader();
+            });
+            
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -91,6 +122,7 @@ namespace Service2
 
             app.UseHttpMetrics();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

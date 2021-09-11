@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front
+spec:
+  selector:
+    matchLabels:
+      app: front
+  template:
+    metadata:
+      labels:
+        app: front
+    spec:
+      containers:
+      - name: front
+        image: containersoga/hrfront
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+        env:
+          - name: HRhostApi
+            valueFrom:
+              configMapKeyRef:
+                name: hrconfigs
+                key: ingressGateway
+          - name: HRoktaIssuer
+            valueFrom:
+              configMapKeyRef:
+                name: hrconfigs
+                key: oktaIssuer
+          - name: HRoktaClient
+            valueFrom:
+              secretKeyRef:
+                name: hrsecrets
+                key: oktaClient
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: front
+  labels:
+    app: front
+spec:
+  selector:
+    app: front
+  ports:
+  - port: 80
+    targetPort: 80
+    protocol: TCP
+    name: http

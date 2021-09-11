@@ -1,0 +1,16 @@
+<div>
+    <form #userForm="ngForm" novalidate>
+        <div>
+            <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutWrap fxLayoutAlign="center">
+                <mat-form-field fxFlex class="full-width">
+                    <mat-label>Nombre</mat-label>
+                    <input matInput [(ngModel)]="item.name" #adname="ngModel" name="adname" id="adname" maxlength="200" required>
+                    <mat-error *ngIf="adname.errors?.required">*Campo requerido</mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <div>
+            <button mat-raised-button #myButton style="width: 200px;" (click)="save()" [disabled]="!userForm.valid"><mat-icon style="-webkit-text-fill-color:#412684">save</mat-icon>Guardar cambios</button>
+        </div>
+    </form>
+</div>
