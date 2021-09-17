@@ -1,0 +1,25 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: humanresources-gateway
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - port: 
+      number: 80
+      name: http
+      protocol: HTTP
+    hosts:
+    - '*/my.humanresources.com'
+    - '*/humanresources.com'
+  - port:
+      number: 443
+      name: https
+      protocol: HTTPS
+    hosts:
+    - '*/my.humanresources.com'
+    - '*/humanresources.com'
+    tls:
+      mode: SIMPLE
+      credentialName: httpbin-credential

@@ -5,4 +5,4 @@ metadata:
 data:
   oktaIssuer: https://dev-909112.okta.com/oauth2/default
   oktaAudience: api://default
-  ingressGateway: https://localhost/api/v1
+  ingressGateway: https://my.humanresources.com/api/v1
